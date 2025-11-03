@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 import { FaUserSlash, FaBriefcase, FaUtensils, FaBook } from "react-icons/fa";
 import { Heart, Home, Utensils, Shield, Smile, TrendingUp, ArrowRight, Star, Users, Stethoscope, Calendar, Cross, Sparkles, Award } from "lucide-react";
 
@@ -658,6 +659,19 @@ const JordanCommunity = () => {
           </motion.div>
         </div>
       </section>
+
+      <ImageGallery
+        title="Community Transformation"
+        images={[
+          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
+          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+          "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&q=80",
+          "https://images.unsplash.com/photo-1524503033411-c9566986fc8f?w=800&q=80",
+          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+        ]}
+        className="bg-white"
+      />
 
       <Footer />
     </div>

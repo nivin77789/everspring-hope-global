@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 import { Church, Users, Heart, Book, Globe, TrendingUp, ArrowRight, Star, MapPin, Target, GraduationCap, Award, Sparkles, Cross } from "lucide-react";
 
 const ChurchPlanting = () => {
@@ -749,6 +750,19 @@ const ChurchPlanting = () => {
           </motion.div>
         </div>
       </section>
+
+      <ImageGallery
+        title="Church Planting Journey"
+        images={[
+          "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=800&q=80",
+          "https://images.unsplash.com/photo-1507692049790-de58290a4334?w=800&q=80",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+          "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=800&q=80",
+          "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+          "https://images.unsplash.com/photo-1525026198548-4baa812f1183?w=800&q=80",
+        ]}
+        className="bg-white"
+      />
 
       <Footer />
     </div>

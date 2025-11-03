@@ -1,9 +1,9 @@
-// Homes.tsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Home, Users, Heart, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 
 const Homes = () => {
   const homes = [
@@ -105,6 +105,19 @@ const Homes = () => {
           </div>
         </div>
       </section>
+
+      <ImageGallery
+        title="Our Children's Homes"
+        images={[
+          "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80",
+          "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
+          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+        ]}
+        className="bg-gradient-to-b from-white to-[#FAF8F5]"
+      />
 
       <Footer />
     </div>

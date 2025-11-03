@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 import { Home, GraduationCap, Heart, Target, Users, Shield, Sparkles, ArrowRight, Star } from "lucide-react";
 
 const Bangalore = () => {
@@ -527,6 +528,19 @@ const Bangalore = () => {
           </motion.div>
         </div>
       </section>
+
+      <ImageGallery
+        title="New Hope Children Home Gallery"
+        images={[
+          "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80",
+          "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
+          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+        ]}
+        className="bg-white"
+      />
 
       <Footer />
     </div>

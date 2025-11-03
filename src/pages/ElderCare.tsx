@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { VolunteerDialog } from "@/components/VolunteerDialog";
+import { ImageGallery } from "@/components/ImageGallery";
 import {
   Heart, Home, Utensils, Shield, Users, BookOpen, Calendar,
   Star, ArrowRight, Sparkles, Award, Stethoscope, Church,
@@ -708,6 +709,19 @@ const ElderCare = () => {
           </motion.div>
         </div>
       </section>
+
+      <ImageGallery
+        title="Elder Care in Action"
+        images={[
+          "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=800&q=80",
+          "https://images.unsplash.com/photo-1609619385002-f40f4b6ad6a3?w=800&q=80",
+          "https://images.unsplash.com/photo-1516733968668-dbdce39c4651?w=800&q=80",
+          "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
+          "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?w=800&q=80",
+          "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80",
+        ]}
+        className="bg-white"
+      />
 
       <Footer />
     </div>

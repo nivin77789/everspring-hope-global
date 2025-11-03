@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 import { Heart, Users, Utensils, Activity, BookOpen, HeartPulse, ArrowRight, Star, Shield, Stethoscope, GraduationCap, Sparkles, Target, TrendingUp, Cross, Droplets, ActivityIcon, Brain } from "lucide-react";
 
 const SpecialCare = () => {
@@ -703,6 +704,19 @@ const SpecialCare = () => {
           </motion.div>
         </div>
       </section>
+
+      <ImageGallery
+        title="Medical Care Impact"
+        images={[
+          "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
+          "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80",
+          "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80",
+          "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+          "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
+          "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+        ]}
+        className="bg-white"
+      />
 
       <Footer />
     </div>

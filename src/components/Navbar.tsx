@@ -71,7 +71,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <motion.div
-              className="h-14 w-14 bg-white rounded-full flex items-center justify-center shadow-lg transition-all group-hover:shadow-xl group-hover:shadow-gold/30"
+              className="h-14 w-14 bg-white rounded-2xl flex items-center justify-center shadow-lg transition-all group-hover:shadow-xl group-hover:shadow-gold/30"
               whileHover={{ scale: 1.1, rotate: [0, -10, 10, -10, 0] }}
               transition={{ duration: 0.5 }}
             >

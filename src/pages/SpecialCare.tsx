@@ -27,8 +27,7 @@ const SpecialCare = () => {
       children: 50,
       description: "Comprehensive care for HIV-infected and affected children and families",
       color: "from-[#678E76] to-[#557366]",
-      stats: ["Medical Support", "Nutrition Care", "Education", "Counseling"],
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80"
+      stats: ["Medical Support", "Nutrition Care", "Education", "Counseling"]
     },
     {
       title: "Medical Outreach",
@@ -37,8 +36,7 @@ const SpecialCare = () => {
       children: 200,
       description: "Mobile healthcare services reaching remote communities with essential medical care",
       color: "from-[#8BAA92] to-[#678E76]",
-      stats: ["Mobile Clinics", "Vaccination", "Health Screenings", "Medication"],
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80"
+      stats: ["Mobile Clinics", "Vaccination", "Health Screenings", "Medication"]
     },
   ];
 
@@ -408,17 +406,6 @@ const SpecialCare = () => {
                 >
                   <div className="absolute -inset-1 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                   <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] rounded-3xl shadow-2xl border border-[#678E76]/10 h-full overflow-hidden">
-                    {/* Program Image */}
-                    <div className="h-64 overflow-hidden">
-                      <motion.img
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ duration: 0.6 }}
-                        src={program.image}
-                        alt={program.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    
                     <div className="p-8">
                       <div className="flex items-start justify-between mb-6">
                         <motion.div
@@ -520,24 +507,15 @@ const SpecialCare = () => {
               >
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
                 <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] rounded-3xl shadow-2xl border border-[#678E76]/10 overflow-hidden">
-                  <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div className="p-8 md:p-12">
-                      <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-                        In <span className="font-bold text-[#678E76]">Bidar, Karnataka</span>, HIV prevalence remains relatively low, with an estimated{" "}
-                        <span className="font-bold text-[#8BAA92]">0.32% among pregnant women</span> in the Gulbarga region.
-                      </p>
-                      <p className="text-2xl text-gray-700 leading-relaxed">
-                        However, the impact on children and families is significant, especially in{" "}
-                        <span className="font-bold text-red-600">marginalized communities</span>.
-                      </p>
-                    </div>
-                    <div className="h-80 md:h-full">
-                      <img
-                        src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80"
-                        alt="Medical care in community"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                  <div className="p-8 md:p-12">
+                    <p className="text-2xl text-gray-700 leading-relaxed mb-8">
+                      In <span className="font-bold text-[#678E76]">Bidar, Karnataka</span>, HIV prevalence remains relatively low, with an estimated{" "}
+                      <span className="font-bold text-[#8BAA92]">0.32% among pregnant women</span> in the Gulbarga region.
+                    </p>
+                    <p className="text-2xl text-gray-700 leading-relaxed">
+                      However, the impact on children and families is significant, especially in{" "}
+                      <span className="font-bold text-red-600">marginalized communities</span>.
+                    </p>
                   </div>
                 </div>
               </motion.div>

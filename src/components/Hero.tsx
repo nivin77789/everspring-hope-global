@@ -189,40 +189,26 @@ const Hero = () => {
                   ))}
                 </motion.div>
 
-                <motion.div
-                  className="relative z-10 bg-white/95 backdrop-blur-sm p-6 md:p-8 lg:p-10 rounded-3xl shadow-2xl"
+                <motion.img
+                  src="/images/logo.png"
+                  alt="Everspring International Logo"
+                  className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain relative z-10"
+                  style={{
+                    filter: "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))"
+                  }}
                   animate={{
                     y: [0, -10, 0],
-                    boxShadow: [
-                      "0 20px 60px rgba(194, 166, 140, 0.4)",
-                      "0 30px 80px rgba(255, 255, 255, 0.6)",
-                      "0 20px 60px rgba(194, 166, 140, 0.4)",
+                    filter: [
+                      "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))",
+                      "drop-shadow(0 0 40px rgba(255, 255, 255, 1))",
+                      "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))",
                     ],
                   }}
                   transition={{ 
                     y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-                    boxShadow: { duration: 3, repeat: Infinity }
+                    filter: { duration: 3, repeat: Infinity }
                   }}
-                  style={{
-                    aspectRatio: "1/1",
-                    width: "clamp(200px, 30vw, 320px)",
-                    height: "clamp(200px, 30vw, 320px)",
-                  }}
-                >
-                  <motion.img
-                    src="/images/logo.png"
-                    alt="Everspring International Logo"
-                    className="w-full h-full object-contain"
-                    animate={{
-                      scale: [1, 1.05, 1],
-                    }}
-                    transition={{ 
-                      duration: 4, 
-                      repeat: Infinity, 
-                      ease: "easeInOut" 
-                    }}
-                  />
-                </motion.div>
+                />
               </motion.div>
             )}
           </div>

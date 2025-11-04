@@ -24,7 +24,7 @@ const ChurchPlanting = () => {
       icon: Heart,
       title: "Compassionate Service",
       description: "Serving communities with love and practical support",
-      color: "from-[#678E76] to-[#557366]",
+      color: "from-primary to-primary-dark",
       stat: "1,500+",
       statLabel: "Villages Reached"
     },
@@ -32,7 +32,7 @@ const ChurchPlanting = () => {
       icon: Users,
       title: "Community Building",
       description: "Creating spaces of fellowship and belonging",
-      color: "from-[#8BAA92] to-[#678E76]",
+      color: "from-primary-light to-primary",
       stat: "24",
       statLabel: "People Groups"
     },
@@ -40,7 +40,7 @@ const ChurchPlanting = () => {
       icon: Book,
       title: "Biblical Teaching",
       description: "Grounded in scripture and sound doctrine",
-      color: "from-[#C0A58B] to-[#A88D73]",
+      color: "from-gold to-gold-dark",
       stat: "120+",
       statLabel: "Leaders Trained"
     },
@@ -48,7 +48,7 @@ const ChurchPlanting = () => {
       icon: TrendingUp,
       title: "Holistic Development",
       description: "Spiritual, social, and economic empowerment",
-      color: "from-[#D4BFA3] to-[#C0A58B]",
+      color: "from-gold-light to-gold",
       stat: "80+",
       statLabel: "Seminary Students"
     },
@@ -56,7 +56,7 @@ const ChurchPlanting = () => {
       icon: Globe,
       title: "Cultural Sensitivity",
       description: "Respecting and embracing local traditions",
-      color: "from-[#678E76] to-[#8BAA92]",
+      color: "from-primary to-primary-light",
       stat: "500M+",
       statLabel: "Hearing Gospel"
     },
@@ -64,7 +64,7 @@ const ChurchPlanting = () => {
       icon: Church,
       title: "Indigenous Leadership",
       description: "Raising up local leaders for sustainability",
-      color: "from-[#8BAA92] to-[#C0A58B]",
+      color: "from-primary-light to-gold",
       stat: "7",
       statLabel: "Years of Growth"
     },

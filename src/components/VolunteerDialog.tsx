@@ -55,7 +55,7 @@ export const VolunteerDialog = ({ trigger }: { trigger?: React.ReactNode }) => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {trigger || (
-          <Button className="bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white">
+          <Button className="bg-gradient-to-r from-primary to-primary-light text-white">
             <Heart className="h-4 w-4 mr-2" />
             Volunteer Today
           </Button>
@@ -63,7 +63,7 @@ export const VolunteerDialog = ({ trigger }: { trigger?: React.ReactNode }) => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-heading font-bold text-[#678E76]">
+          <DialogTitle className="text-2xl font-heading font-bold text-primary">
             Volunteer Application
           </DialogTitle>
         </DialogHeader>
@@ -110,7 +110,7 @@ export const VolunteerDialog = ({ trigger }: { trigger?: React.ReactNode }) => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white"
+            className="w-full bg-gradient-to-r from-primary to-primary-light text-white"
           >
             Submit Application
           </Button>

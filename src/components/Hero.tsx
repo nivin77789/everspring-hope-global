@@ -24,10 +24,10 @@ const Hero = () => {
           className="absolute inset-0"
           animate={{
             background: [
-              "radial-gradient(circle at 20% 50%, #5D866C 0%, #3F5D4F 50%, #2C4438 100%)",
-              "radial-gradient(circle at 80% 50%, #678E76 0%, #5D866C 50%, #3F5D4F 100%)",
-              "radial-gradient(circle at 50% 80%, #5D866C 0%, #4A6F5C 50%, #3F5D4F 100%)",
-              "radial-gradient(circle at 20% 50%, #5D866C 0%, #3F5D4F 50%, #2C4438 100%)",
+              "radial-gradient(circle at 20% 50%, hsl(220 70% 30%) 0%, hsl(220 60% 20%) 50%, hsl(220 60% 15%) 100%)",
+              "radial-gradient(circle at 80% 50%, hsl(220 60% 40%) 0%, hsl(220 70% 30%) 50%, hsl(220 60% 20%) 100%)",
+              "radial-gradient(circle at 50% 80%, hsl(220 70% 30%) 0%, hsl(220 60% 25%) 50%, hsl(220 60% 20%) 100%)",
+              "radial-gradient(circle at 20% 50%, hsl(220 70% 30%) 0%, hsl(220 60% 20%) 50%, hsl(220 60% 15%) 100%)",
             ],
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
@@ -37,7 +37,7 @@ const Hero = () => {
         <motion.div 
           className="absolute inset-0 opacity-40"
           style={{
-            backgroundImage: "radial-gradient(circle at 30% 30%, rgba(194, 166, 140, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(230, 216, 195, 0.2) 0%, transparent 50%)",
+            backgroundImage: "radial-gradient(circle at 30% 30%, hsl(45 90% 55% / 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 70%, hsl(45 85% 70% / 0.2) 0%, transparent 50%)",
           }}
           animate={{
             scale: [1, 1.1, 1],
@@ -92,13 +92,13 @@ const Hero = () => {
             >
               {isShape ? (
                 <div 
-                  className="w-3 h-3 rounded-full bg-gradient-to-br from-[#C2A68C] to-[#E6D8C3]"
+                  className="w-3 h-3 rounded-full bg-gradient-to-br from-gold to-gold-light"
                   style={{
-                    boxShadow: "0 0 20px rgba(194, 166, 140, 0.6)",
+                    boxShadow: "0 0 20px hsl(45 90% 55% / 0.6)",
                   }}
                 />
               ) : (
-                <Icon className="w-6 h-6 text-[#E6D8C3]" strokeWidth={1.5} />
+                <Icon className="w-6 h-6 text-gold-light" strokeWidth={1.5} />
               )}
             </motion.div>
           );
@@ -114,8 +114,8 @@ const Hero = () => {
             key={`cross-${i}`}
             className="absolute text-4xl md:text-5xl font-bold"
             style={{
-              color: "rgba(230, 216, 195, 0.15)",
-              textShadow: "0 0 20px rgba(230, 216, 195, 0.3)",
+              color: "hsl(45 85% 70% / 0.15)",
+              textShadow: "0 0 20px hsl(45 85% 70% / 0.3)",
             }}
             initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
@@ -164,11 +164,11 @@ const Hero = () => {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 >
-                  <div className="absolute inset-0 rounded-full border-2 border-dashed border-[#E6D8C3]/30" />
+                  <div className="absolute inset-0 rounded-full border-2 border-dashed border-gold-light/30" />
                   {[...Array(8)].map((_, i) => (
                     <motion.div
                       key={i}
-                      className="absolute w-3 h-3 bg-[#C2A68C] rounded-full"
+                      className="absolute w-3 h-3 bg-gold rounded-full"
                       style={{
                         left: '50%',
                         top: '50%',
@@ -194,14 +194,14 @@ const Hero = () => {
                   alt="Everspring International Logo"
                   className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain relative z-10"
                   style={{
-                    filter: "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))"
+                    filter: "drop-shadow(0 0 20px hsl(45 90% 55% / 0.8))"
                   }}
                   animate={{
                     y: [0, -10, 0],
                     filter: [
-                      "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))",
-                      "drop-shadow(0 0 40px rgba(255, 255, 255, 1))",
-                      "drop-shadow(0 0 20px rgba(194, 166, 140, 0.8))",
+                      "drop-shadow(0 0 20px hsl(45 90% 55% / 0.8))",
+                      "drop-shadow(0 0 40px hsl(45 90% 55% / 1))",
+                      "drop-shadow(0 0 20px hsl(45 90% 55% / 0.8))",
                     ],
                   }}
                   transition={{ 
@@ -221,7 +221,7 @@ const Hero = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -100, opacity: 0 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
-                className="inline-block bg-gradient-to-r from-[#E6D8C3] via-[#F5F5F0] to-[#C2A68C] bg-clip-text text-transparent font-serif"
+                className="inline-block bg-gradient-to-r from-gold-light via-white to-gold bg-clip-text text-transparent font-serif"
                 style={{ backgroundSize: "200% 200%" }}
               >
                 {currentText === 0 ? "25 Years of God's Faithfulness" : "Everspring International"}
@@ -243,16 +243,16 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
             <motion.a
               href="/genesis"
-              className="relative bg-gradient-to-r from-[#C2A68C] to-[#E6D8C3] text-[#3F5D4F] px-8 py-4 rounded-xl font-bold text-lg transition-all overflow-hidden group"
+              className="relative bg-gradient-to-r from-gold to-gold-light text-gold-foreground px-8 py-4 rounded-xl font-bold text-lg transition-all overflow-hidden group"
               whileHover={{ 
                 scale: 1.08, 
-                boxShadow: "0 0 40px rgba(194, 166, 140, 0.8)",
+                boxShadow: "0 0 40px hsl(45 90% 55% / 0.8)",
                 y: -3,
               }}
               whileTap={{ scale: 0.95 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-[#E6D8C3] to-[#C2A68C]"
+                className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold"
                 initial={{ x: "-100%" }}
                 whileHover={{ x: "100%" }}
                 transition={{ duration: 0.5 }}
@@ -264,10 +264,10 @@ const Hero = () => {
             </motion.a>
             <motion.a
               href="/donate"
-              className="relative bg-transparent border-2 border-[#F5F5F0] text-white hover:bg-[#F5F5F0] hover:text-[#5D866C] px-8 py-4 rounded-xl font-bold text-lg transition-all overflow-hidden group"
+              className="relative bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-bold text-lg transition-all overflow-hidden group"
               whileHover={{ 
                 scale: 1.08, 
-                boxShadow: "0 0 40px rgba(245, 245, 240, 0.5)",
+                boxShadow: "0 0 40px hsl(0 0% 100% / 0.5)",
                 y: -3,
               }}
               whileTap={{ scale: 0.95 }}
@@ -276,8 +276,8 @@ const Hero = () => {
                 className="absolute inset-0"
                 animate={{
                   background: [
-                    "linear-gradient(90deg, transparent, rgba(245, 245, 240, 0.1), transparent)",
-                    "linear-gradient(90deg, transparent, rgba(245, 245, 240, 0.1), transparent)",
+                    "linear-gradient(90deg, transparent, hsl(0 0% 100% / 0.1), transparent)",
+                    "linear-gradient(90deg, transparent, hsl(0 0% 100% / 0.1), transparent)",
                   ],
                   x: ["-100%", "100%"],
                 }}
@@ -307,7 +307,7 @@ const Hero = () => {
         >
           {/* Pulse rings */}
           <motion.div
-            className="absolute inset-0 w-12 h-16 border-2 border-[#E6D8C3]/40 rounded-full -translate-x-3 -translate-y-3"
+            className="absolute inset-0 w-12 h-16 border-2 border-gold-light/40 rounded-full -translate-x-3 -translate-y-3"
             animate={{
               scale: [1, 1.3, 1],
               opacity: [0.5, 0, 0.5],
@@ -318,10 +318,10 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
-            className="w-6 h-10 border-2 border-[#F5F5F0] rounded-full flex items-start justify-center p-2 hover:border-[#C2A68C] transition-colors backdrop-blur-sm bg-white/5"
+            className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2 hover:border-gold transition-colors backdrop-blur-sm bg-white/5"
           >
             <motion.div
-              className="w-1 h-3 bg-gradient-to-b from-[#F5F5F0] to-[#C2A68C] rounded-full"
+              className="w-1 h-3 bg-gradient-to-b from-white to-gold rounded-full"
               animate={{ 
                 opacity: [1, 0.3, 1],
                 scaleY: [1, 0.5, 1],
@@ -331,7 +331,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.p
-            className="text-[#F5F5F0] text-xs mt-2 text-center font-semibold tracking-wider"
+            className="text-white text-xs mt-2 text-center font-semibold tracking-wider"
             animate={{ opacity: [0.7, 1, 0.7] }}
             transition={{ repeat: Infinity, duration: 2 }}
           >

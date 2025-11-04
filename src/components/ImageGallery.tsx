@@ -32,12 +32,12 @@ export const ImageGallery = ({ images, title, className = "" }: ImageGalleryProp
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
+              className="inline-block bg-gradient-to-r from-primary to-primary-light text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
             >
               GALLERY
             </motion.div>
             
-            <h2 className="text-5xl md:text-6xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-4">
+            <h2 className="text-5xl md:text-6xl font-heading font-black bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent mb-4">
               {title}
             </h2>
             
@@ -46,7 +46,7 @@ export const ImageGallery = ({ images, title, className = "" }: ImageGalleryProp
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="h-2 w-24 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto rounded-full"
+              className="h-2 w-24 bg-gradient-to-r from-primary to-gold mx-auto rounded-full"
             />
           </motion.div>
         )}
@@ -81,7 +81,7 @@ export const ImageGallery = ({ images, title, className = "" }: ImageGalleryProp
                     whileHover={{ scale: 1.05, y: -8 }}
                     className="p-1"
                   >
-                    <Card className="overflow-hidden border-2 border-[#678E76]/20 shadow-xl group">
+                    <Card className="overflow-hidden border-2 border-primary/20 shadow-xl group">
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <motion.img
                           src={image}
@@ -95,7 +95,7 @@ export const ImageGallery = ({ images, title, className = "" }: ImageGalleryProp
                         <motion.div
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}
-                          className="absolute inset-0 flex items-center justify-center bg-[#678E76]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          className="absolute inset-0 flex items-center justify-center bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                         >
                           <div className="bg-white/20 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center border-2 border-white/40">
                             <span className="text-3xl font-black text-white">{index + 1}</span>
@@ -109,8 +109,8 @@ export const ImageGallery = ({ images, title, className = "" }: ImageGalleryProp
             </CarouselContent>
             
             <div className="flex justify-center gap-4 mt-8">
-              <CarouselPrevious className="static translate-y-0 hover:bg-[#678E76] hover:text-white border-[#678E76] transition-colors" />
-              <CarouselNext className="static translate-y-0 hover:bg-[#678E76] hover:text-white border-[#678E76] transition-colors" />
+              <CarouselPrevious className="static translate-y-0 hover:bg-primary hover:text-white border-primary transition-colors" />
+              <CarouselNext className="static translate-y-0 hover:bg-primary hover:text-white border-primary transition-colors" />
             </div>
           </Carousel>
         </motion.div>

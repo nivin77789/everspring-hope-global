@@ -37,7 +37,7 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#8BAA92] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-primary-light to-primary-dark flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const AdminLogin = () => {
       >
         <Card className="w-full max-w-md">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-3xl font-heading font-bold text-center text-[#678E76]">
+            <CardTitle className="text-3xl font-heading font-bold text-center text-primary">
               Admin Login
             </CardTitle>
             <CardDescription className="text-center">
@@ -87,7 +87,7 @@ const AdminLogin = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white"
+                className="w-full bg-gradient-to-r from-primary to-primary-light text-white"
               >
                 {isLoading ? "Signing in..." : "Sign In"}
               </Button>

@@ -97,7 +97,7 @@ const AdminDashboard = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center">
-        <div className="text-2xl text-[#678E76]">Loading...</div>
+        <div className="text-2xl text-primary">Loading...</div>
       </div>
     );
   }
@@ -113,7 +113,7 @@ const AdminDashboard = () => {
         >
           <div className="flex justify-between items-center mb-8">
             <div>
-              <h1 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-2">
+              <h1 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent mb-2">
                 Admin Dashboard
               </h1>
               <p className="text-gray-600">Manage volunteers, contacts, and newsletter subscriptions</p>
@@ -121,7 +121,7 @@ const AdminDashboard = () => {
             <Button
               onClick={handleLogout}
               variant="outline"
-              className="border-[#678E76] text-[#678E76] hover:bg-[#678E76] hover:text-white"
+              className="border-primary text-primary hover:bg-primary hover:text-white"
             >
               <LogOut className="h-4 w-4 mr-2" />
               Logout
@@ -132,28 +132,28 @@ const AdminDashboard = () => {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Total Volunteers</CardTitle>
-                <Users className="h-4 w-4 text-[#678E76]" />
+                <Users className="h-4 w-4 text-primary" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-[#678E76]">{volunteers.length}</div>
+                <div className="text-2xl font-bold text-primary">{volunteers.length}</div>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Contact Messages</CardTitle>
-                <Mail className="h-4 w-4 text-[#678E76]" />
+                <Mail className="h-4 w-4 text-primary" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-[#678E76]">{contacts.length}</div>
+                <div className="text-2xl font-bold text-primary">{contacts.length}</div>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Newsletter Subscribers</CardTitle>
-                <Heart className="h-4 w-4 text-[#678E76]" />
+                <Heart className="h-4 w-4 text-primary" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-[#678E76]">{newsletters.length}</div>
+                <div className="text-2xl font-bold text-primary">{newsletters.length}</div>
               </CardContent>
             </Card>
           </div>

@@ -754,12 +754,13 @@ const ChurchPlanting = () => {
       <ImageGallery
         title="Church Planting Journey"
         images={[
-          "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=800&q=80",
-          "https://images.unsplash.com/photo-1507692049790-de58290a4334?w=800&q=80",
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-          "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=800&q=80",
-          "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
-          "https://images.unsplash.com/photo-1525026198548-4baa812f1183?w=800&q=80",
+          "/images/church/1.jpeg?w=800&q=80",
+          "/images/church/2.jpeg?w=800&q=80",
+          "/images/church/3.jpeg?w=800&q=80",
+          "/images/church/4.jpeg?w=800&q=80",
+          "/images/church/5.jpeg?w=800&q=80",
+          "/images/church/6.jpeg?w=800&q=80",
+          "/images/church/7.jpeg?w=800&q=80",
         ]}
         className="bg-white"
       />

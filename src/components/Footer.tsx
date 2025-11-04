@@ -84,7 +84,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-2xl font-heading font-bold mb-4 text-gold">
-              Everspring International
+              EverSpring International
             </h3>
             <p className="text-white/80 mb-4">
               Empowering vulnerable children and communities across India through holistic care,
@@ -256,7 +256,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Everspring International. All rights reserved.
+            © {new Date().getFullYear()} EverSpring International. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-white/60 hover:text-gold text-sm transition-colors">

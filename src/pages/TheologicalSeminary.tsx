@@ -6,9 +6,18 @@ import { ImageGallery } from "@/components/ImageGallery";
 
 const TheologicalSeminary = () => {
   const images = [
-    "https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=800&q=80",
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
-    "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80",
+    "/images/theo/1.jpeg",
+    "/images/theo/2.jpeg",
+    "/images/theo/3.jpeg",
+    "/images/theo/4.jpeg",
+    "/images/theo/5.jpeg",
+    "/images/theo/6.jpeg",
+    "/images/theo/7.jpeg",
+    "/images/theo/8.jpeg",
+    "/images/theo/9.jpeg",
+    "/images/theo/10.jpeg",
+    "/images/theo/11.jpeg",
+    "/images/theo/12.jpeg", 
   ];
 
   const stats = [
@@ -40,7 +49,7 @@ const TheologicalSeminary = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary via-primary-dark to-primary">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=1920&q=80')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/images/theo/9.jpeg?w=1920&q=80')] bg-cover bg-center opacity-10" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

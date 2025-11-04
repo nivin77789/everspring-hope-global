@@ -100,12 +100,12 @@ const Navbar = () => {
             >
               <img
                 src="/images/logo.png"
-                alt="Everspring International Logo"
+                alt="EverSpring International Logo"
                 className="h-10 w-10 object-contain"
               />
             </motion.div>
             <div className="text-2xl font-heading font-bold text-white group-hover:text-gold transition-colors">
-              Everspring International
+              EverSpring International
             </div>
           </Link>
 

@@ -663,12 +663,15 @@ const JordanCommunity = () => {
       <ImageGallery
         title="Community Transformation"
         images={[
-          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
-          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-          "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&q=80",
-          "https://images.unsplash.com/photo-1524503033411-c9566986fc8f?w=800&q=80",
-          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+          "/images/jord/1.jpeg?w=800&q=80",
+          "/images/jord/2.jpeg?w=800&q=80",
+          "/images/jord/3.jpeg?w=800&q=80",
+          "/images/jord/4.jpeg?w=800&q=80",
+          "/images/jord/5.jpeg?w=800&q=80",
+          "/images/jord/6.jpeg?w=800&q=80",
+          "/images/jord/7.jpeg?w=800&q=80",
+          "/images/jord/8.jpeg?w=800&q=80",
+          "/images/jord/9.jpeg?w=800&q=80",
         ]}
         className="bg-white"
       />

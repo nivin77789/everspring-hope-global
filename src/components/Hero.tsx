@@ -191,7 +191,7 @@ const Hero = () => {
 
                 <motion.img
                   src="/images/logo.png"
-                  alt="Everspring International Logo"
+                  alt="EverSpring International Logo"
                   className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain relative z-10"
                   style={{
                     filter: "drop-shadow(0 0 20px hsl(45 90% 55% / 0.8))"
@@ -224,7 +224,7 @@ const Hero = () => {
                 className="inline-block bg-gradient-to-r from-gold-light via-white to-gold bg-clip-text text-transparent font-serif"
                 style={{ backgroundSize: "200% 200%" }}
               >
-                {currentText === 0 ? "25 Years of God's Faithfulness" : "Everspring International"}
+                {currentText === 0 ? "25 Years of God's Faithfulness" : "EverSpring International"}
               </motion.span>
             </AnimatePresence>
           </h1>

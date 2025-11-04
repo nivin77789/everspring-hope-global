@@ -49,7 +49,7 @@ const Donate = () => {
   ];
 
   const bankDetails = {
-    accountName: "Everspring International",
+    accountName: "EverSpring International",
     accountNumber: "1234567890",
     ifscCode: "ABCD0001234",
     bankName: "State Bank of India",

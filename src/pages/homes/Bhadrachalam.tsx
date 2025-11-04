@@ -584,12 +584,14 @@ const Bhadrachalam = () => {
       <ImageGallery
         title="Bhadrachalam Home Gallery"
         images={[
-          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
-          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
-          "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&q=80",
-          "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+          "/images/child/1.jpeg?w=800&q=80",
+          "/images/child/2.jpeg?w=800&q=80",
+          "/images/child/3.jpeg?w=800&q=80",
+          "/images/child/4.jpeg?w=800&q=80",
+          "/images/child/5.jpeg?w=800&q=80",
+          "/images/child/6.jpeg?w=800&q=80",
+          "/images/child/7.jpeg?w=800&q=80",
+          "/images/child/8.jpeg?w=800&q=80",
         ]}
         className="bg-white"
       />

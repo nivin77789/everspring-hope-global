@@ -358,7 +358,7 @@ const Index = () => {
               />
               
               <p className="text-2xl text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
-                Since 2000, Everspring International (Helping Hands India) has been transforming
+                Since 2000, EverSpring International (Helping Hands India) has been transforming
                 lives across India. What began with one man's compassion has grown into a movement
                 of hope, reaching vulnerable children, elders, and communities with love, care, and
                 opportunity.

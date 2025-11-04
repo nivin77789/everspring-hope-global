@@ -16,6 +16,7 @@ import ElderCare from "./pages/ElderCare";
 import SpecialCare from "./pages/SpecialCare";
 import JordanCommunity from "./pages/JordanCommunity";
 import ChurchPlanting from "./pages/ChurchPlanting";
+import TheologicalSeminary from "./pages/TheologicalSeminary";
 import Donate from "./pages/Donate";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -42,6 +43,7 @@ const App = () => (
     <Route path="/special-care" element={<SpecialCare />} />
     <Route path="/jordan-community" element={<JordanCommunity />} />
     <Route path="/church-planting" element={<ChurchPlanting />} />
+    <Route path="/theological-seminary" element={<TheologicalSeminary />} />
     <Route path="/donate" element={<Donate />} />
     <Route path="/admin/login" element={<AdminLogin />} />
     <Route path="/admin/dashboard" element={<AdminDashboard />} />

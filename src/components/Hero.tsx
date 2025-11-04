@@ -236,7 +236,7 @@ const Hero = () => {
               }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              Serving with compassion and faith since 2000
+              Serving with compassion and faith since 2001
             </motion.span>
           </p>
           

@@ -88,7 +88,7 @@ const Footer = () => {
             </h3>
             <p className="text-white/80 mb-4">
               Empowering vulnerable children and communities across India through holistic care,
-              education, and spiritual guidance since 2000.
+              education, and spiritual guidance since 2001.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isHomesDropdownOpen, setIsHomesDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -31,28 +31,51 @@ const Navbar = () => {
         { name: "Ambur", path: "/homes/ambur" },
       ],
     },
-    { name: "Elder Care", path: "/elder-care" },
-    { name: "Special Care", path: "/special-care" },
-    { name: "Jordan Community", path: "/jordan-community" },
-    { name: "Church Planting", path: "/church-planting" },
+    {
+      name: "Care's",
+      path: "/elder-care",
+      dropdown: [
+        { name: "Elder Care", path: "/elder-care" },
+        { name: "Special Care", path: "/special-care" },
+      ],
+    },
+    {
+      name: "Community",
+      path: "/jordan-community",
+      dropdown: [
+        { name: "Jordan Community", path: "/jordan-community" },
+        { name: "Church Planting", path: "/church-planting" },
+      ],
+    },
+    { name: "Theological Seminary", path: "/theological-seminary" },
   ];
 
   const handleHomesClick = (e: React.MouseEvent) => {
     e.preventDefault();
     navigate("/homes");
-    setIsHomesDropdownOpen(false);
+    setOpenDropdown(null);
     setIsMobileMenuOpen(false);
   };
 
   const handleDropdownItemClick = (path: string) => {
     navigate(path);
-    setIsHomesDropdownOpen(false);
+    setOpenDropdown(null);
     setIsMobileMenuOpen(false);
   };
 
-  const handleHomesButtonClick = (e: React.MouseEvent) => {
+  const handleDropdownClick = (e: React.MouseEvent, linkName: string) => {
+    e.preventDefault();
+    const link = navLinks.find(l => l.name === linkName);
+    if (link) {
+      navigate(link.path);
+      setOpenDropdown(null);
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  const handleDropdownButtonClick = (e: React.MouseEvent, linkName: string) => {
     e.stopPropagation();
-    setIsHomesDropdownOpen(!isHomesDropdownOpen);
+    setOpenDropdown(openDropdown === linkName ? null : linkName);
   };
 
   return (
@@ -93,37 +116,37 @@ const Navbar = () => {
                 <div
                   key={link.name}
                   className="relative"
-                  onMouseEnter={() => setIsHomesDropdownOpen(true)}
-                  onMouseLeave={() => setIsHomesDropdownOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(link.name)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <div className="flex items-center space-x-1">
                     <Link
                       to={link.path}
                       className="text-white hover:text-gold transition-colors font-medium"
-                      onClick={handleHomesClick}
+                      onClick={(e) => handleDropdownClick(e, link.name)}
                     >
                       {link.name}
                     </Link>
                     <button
-                      onClick={handleHomesButtonClick}
+                      onClick={(e) => handleDropdownButtonClick(e, link.name)}
                       className="text-white hover:text-gold transition-colors"
                     >
                       <ChevronDown className="h-4 w-4" />
                     </button>
                   </div>
                   <AnimatePresence>
-                    {isHomesDropdownOpen && (
+                    {openDropdown === link.name && (
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        className="absolute top-full left-0 mt-2 w-48 bg-card shadow-elegant rounded-lg overflow-hidden z-50 border border-gray-200"
+                        className="absolute top-full left-0 mt-2 w-48 bg-card shadow-elegant rounded-lg overflow-hidden z-50 border border-border"
                       >
                         {link.dropdown.map((item) => (
                           <Link
                             key={item.name}
                             to={item.path}
-                            className="block px-4 py-3 text-foreground hover:bg-secondary transition-colors border-b border-gray-100 last:border-b-0"
+                            className="block px-4 py-3 text-foreground hover:bg-secondary transition-colors border-b border-border last:border-b-0"
                             onClick={() => handleDropdownItemClick(item.path)}
                           >
                             {item.name}
@@ -177,23 +200,23 @@ const Navbar = () => {
                       <Link
                         to={link.path}
                         className="flex-1 px-4 py-3 text-white hover:text-gold transition-colors"
-                        onClick={handleHomesClick}
+                        onClick={(e) => handleDropdownClick(e, link.name)}
                       >
                         {link.name}
                       </Link>
                       <button
-                        onClick={() => setIsHomesDropdownOpen(!isHomesDropdownOpen)}
+                        onClick={() => setOpenDropdown(openDropdown === link.name ? null : link.name)}
                         className="px-4 py-3 text-white hover:text-gold transition-colors"
                       >
                         <ChevronDown
                           className={`h-4 w-4 transition-transform ${
-                            isHomesDropdownOpen ? "rotate-180" : ""
+                            openDropdown === link.name ? "rotate-180" : ""
                           }`}
                         />
                       </button>
                     </div>
                     <AnimatePresence>
-                      {isHomesDropdownOpen && (
+                      {openDropdown === link.name && (
                         <motion.div
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: "auto" }}

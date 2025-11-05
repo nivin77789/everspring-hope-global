@@ -45,18 +45,6 @@ const Hero = () => {
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
-
-        {/* Moving light beams */}
-        <motion.div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(45deg, transparent 30%, rgba(245, 245, 240, 0.03) 50%, transparent 70%)",
-          }}
-          animate={{
-            x: ["-100%", "100%"],
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-        />
       </div>
 
       

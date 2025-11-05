@@ -85,7 +85,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-lg"
+          ? "bg-white backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -104,7 +104,9 @@ const Navbar = () => {
                 className="h-10 w-10 object-contain"
               />
             </motion.div>
-            <div className="text-2xl font-heading font-bold text-white group-hover:text-gold transition-colors">
+            <div className={`text-2xl font-heading font-bold transition-colors ${
+              isScrolled ? "text-primary group-hover:text-gold" : "text-white group-hover:text-gold"
+            }`}>
               EverSpring International
             </div>
           </Link>
@@ -122,14 +124,18 @@ const Navbar = () => {
                   <div className="flex items-center space-x-1">
                     <Link
                       to={link.path}
-                      className="text-white hover:text-gold transition-colors font-medium"
+                      className={`hover:text-gold transition-colors font-medium ${
+                        isScrolled ? "text-primary" : "text-white"
+                      }`}
                       onClick={(e) => handleDropdownClick(e, link.name)}
                     >
                       {link.name}
                     </Link>
                     <button
                       onClick={(e) => handleDropdownButtonClick(e, link.name)}
-                      className="text-white hover:text-gold transition-colors"
+                      className={`hover:text-gold transition-colors ${
+                        isScrolled ? "text-primary" : "text-white"
+                      }`}
                     >
                       <ChevronDown className="h-4 w-4" />
                     </button>
@@ -160,8 +166,10 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-white hover:text-gold transition-colors font-medium ${
-                    location.pathname === link.path ? "text-gold" : ""
+                  className={`hover:text-gold transition-colors font-medium ${
+                    location.pathname === link.path 
+                      ? "text-gold" 
+                      : isScrolled ? "text-primary" : "text-white"
                   }`}
                 >
                   {link.name}

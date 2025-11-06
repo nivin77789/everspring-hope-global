@@ -26,7 +26,7 @@ const Index = () => {
       icon: Home,
       title: "Children's Homes",
       description: "Safe havens providing shelter, education, and love to 150+ children",
-      color: "from-[#334155] to-[#475569]",
+      color: "from-[#0f172a] to-[#1e293b]",
       stat: "150+",
       statLabel: "Children"
     },
@@ -34,7 +34,7 @@ const Index = () => {
       icon: Heart,
       title: "Elder Care",
       description: "Restoring dignity and hope to widows and elderly in their golden years",
-      color: "from-[#475569] to-[#64748b]",
+      color: "from-[#1e293b] to-[#334155]",
       stat: "31",
       statLabel: "Elders"
     },
@@ -42,7 +42,7 @@ const Index = () => {
       icon: Users,
       title: "Community Centres",
       description: "Empowering families within villages through holistic support",
-      color: "from-[#64748b] to-[#94a3b8]",
+      color: "from-[#334155] to-[#475569]",
       stat: "4",
       statLabel: "Centres"
     },
@@ -50,7 +50,7 @@ const Index = () => {
       icon: TrendingUp,
       title: "Special Care",
       description: "HIV care and specialized programs for marginalized communities",
-      color: "from-[#94a3b8] to-[#cbd5e1]",
+      color: "from-[#475569] to-[#64748b]",
       stat: "88",
       statLabel: "Lives"
     },
@@ -88,7 +88,7 @@ const Index = () => {
           delay,
           ease: "easeInOut",
         }}
-        className="text-[#fbbf24]/15"
+        className="text-[#f59e0b]/15"
       >
         <Icon className="h-8 w-8" />
       </motion.div>
@@ -117,7 +117,7 @@ const Index = () => {
             y: mousePosition.y / 50,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-[#334155]/15 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-[#0f172a]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -125,7 +125,7 @@ const Index = () => {
             y: -mousePosition.y / 40,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#fbbf24]/15 rounded-full blur-3xl"
+          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#f59e0b]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -133,7 +133,7 @@ const Index = () => {
             y: -mousePosition.y / 60,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#475569]/15 rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#1e293b]/20 rounded-full blur-3xl"
         />
       </div>
 
@@ -154,9 +154,9 @@ const Index = () => {
         </div>
 
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #334155 1px, transparent 1px), linear-gradient(to bottom, #334155 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, #0f172a 1px, transparent 1px), linear-gradient(to bottom, #0f172a 1px, transparent 1px)`,
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
@@ -172,20 +172,20 @@ const Index = () => {
               className="text-center mb-16"
             >
               <div className="inline-block mb-4">
-                <div className="bg-[#fbbf24]/10 backdrop-blur-md px-5 py-2 rounded-full border border-[#fbbf24]/20">
-                  <span className="text-[#334155] font-semibold flex items-center gap-2 text-sm">
-                    <Star className="h-4 w-4 text-[#fbbf24]" fill="currentColor" />
+                <div className="bg-[#f59e0b]/10 backdrop-blur-md px-5 py-2 rounded-full border border-[#f59e0b]/20">
+                  <span className="text-[#0f172a] font-semibold flex items-center gap-2 text-sm">
+                    <Star className="h-4 w-4 text-[#f59e0b]" fill="currentColor" />
                     India's Reality
-                    <Star className="h-4 w-4 text-[#fbbf24]" fill="currentColor" />
+                    <Star className="h-4 w-4 text-[#f59e0b]" fill="currentColor" />
                   </span>
                 </div>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#334155] to-[#475569] bg-clip-text text-transparent mb-4">
+              <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#0f172a] to-[#1e293b] bg-clip-text text-transparent mb-4">
                 Did You Know?
               </h2>
               
-              <div className="h-1 w-24 bg-gradient-to-r from-[#fbbf24] to-[#fde047] mx-auto rounded-full" />
+              <div className="h-1 w-24 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] mx-auto rounded-full" />
             </motion.div>
 
             {/* Main content card */}
@@ -196,13 +196,13 @@ const Index = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#fbbf24]/10 to-[#fde047]/10 rounded-3xl blur-2xl" />
-              <div className="relative bg-gradient-to-br from-white to-[#f8fafc] p-6 md:p-10 rounded-3xl shadow-2xl border border-[#fbbf24]/10">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#f59e0b]/10 to-[#fbbf24]/10 rounded-3xl blur-2xl" />
+              <div className="relative bg-gradient-to-br from-white to-[#f8fafc] p-6 md:p-10 rounded-3xl shadow-2xl border border-[#f59e0b]/10">
                 {/* India illustration */}
                 <div className="flex items-start gap-6 mb-10">
                   <div className="hidden md:block flex-shrink-0">
-                    <div className="w-24 h-24 bg-gradient-to-br from-[#334155] to-[#475569] rounded-2xl flex items-center justify-center shadow-xl">
-                      <svg className="w-16 h-16 text-[#fbbf24]" viewBox="0 0 100 100" fill="currentColor">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-2xl flex items-center justify-center shadow-xl">
+                      <svg className="w-16 h-16 text-[#f59e0b]" viewBox="0 0 100 100" fill="currentColor">
                         <path d="M50 10 L90 90 L10 90 Z" fill="currentColor"/>
                       </svg>
                     </div>
@@ -231,15 +231,15 @@ const Index = () => {
                       viewport={{ once: true }}
                       className="group relative"
                     >
-                      <div className="relative bg-white p-6 rounded-2xl shadow-lg border border-[#334155]/20 hover:shadow-xl transition-shadow duration-300">
+                      <div className="relative bg-white p-6 rounded-2xl shadow-lg border border-[#0f172a]/20 hover:shadow-xl transition-shadow duration-300">
                         <div className="flex gap-4 items-start">
                           <div className="flex-shrink-0">
-                            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#334155] to-[#475569] flex items-center justify-center shadow-lg">
-                              <item.icon className="w-6 h-6 text-[#fbbf24]" />
+                            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0f172a] to-[#1e293b] flex items-center justify-center shadow-lg">
+                              <item.icon className="w-6 h-6 text-[#f59e0b]" />
                             </div>
                           </div>
                           <div className="flex-1">
-                            <div className="text-2xl md:text-3xl font-heading font-black bg-gradient-to-r from-[#334155] to-[#475569] bg-clip-text text-transparent mb-2">
+                            <div className="text-2xl md:text-3xl font-heading font-black bg-gradient-to-r from-[#0f172a] to-[#1e293b] bg-clip-text text-transparent mb-2">
                               {item.stat}
                             </div>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base">{item.text}</p>
@@ -256,10 +256,10 @@ const Index = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
-                  className="relative bg-gradient-to-r from-[#fbbf24]/10 to-transparent border-l-4 border-[#fbbf24] rounded-2xl p-6 md:p-8 my-12"
+                  className="relative bg-gradient-to-r from-[#f59e0b]/10 to-transparent border-l-4 border-[#f59e0b] rounded-2xl p-6 md:p-8 my-12"
                 >
                   <div className="absolute top-4 right-4 opacity-10">
-                    <Heart className="w-16 h-16 text-[#fbbf24]" fill="currentColor" />
+                    <Heart className="w-16 h-16 text-[#f59e0b]" fill="currentColor" />
                   </div>
                   <p className="text-base md:text-lg leading-relaxed text-gray-800 font-semibold relative z-10">
                     Amidst this vast socio-economic, religious, traditional, and caste-driven complexity, Helping Hands India was born in 2001 with a mission to empower and transform vulnerable children and communities—regardless of caste, creed, religion, or background.
@@ -276,22 +276,22 @@ const Index = () => {
                 >
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <div className="hidden md:block">
-                      <div className="bg-gradient-to-br from-[#334155] to-[#475569] p-6 rounded-2xl text-white text-center shadow-xl relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#fbbf24]/20 to-transparent"></div>
+                      <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-6 rounded-2xl text-white text-center shadow-xl relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#f59e0b]/20 to-transparent"></div>
                         <div className="relative">
                           <img 
                             src="/images/logo.png"
                             alt="Dr. Rev. George Fernandes - Father to Hundreds"
-                            className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-4 border-[#fbbf24]"
+                            className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-4 border-[#f59e0b]"
                           />
                           <div className="text-xl font-black mb-2 text-white">Dr. Rev. George Fernandes</div>
-                          <div className="text-sm opacity-90 text-[#fde047]">Father to Hundreds</div>
+                          <div className="text-sm opacity-90 text-[#fbbf24]">Father to Hundreds</div>
                         </div>
                       </div>
                     </div>
                     <div>
                       <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4">
-                        The movement began when compassion and a divine call touched the heart of <span className="font-bold text-[#334155]">Dr. Rev. George Fernandes</span>, a counsellor and theologian. Known lovingly by children as <span className="font-bold text-[#fbbf24]">"Father to Hundreds"</span>, George drew strength from his own painful childhood.
+                        The movement began when compassion and a divine call touched the heart of <span className="font-bold text-[#0f172a]">Dr. Rev. George Fernandes</span>, a counsellor and theologian. Known lovingly by children as <span className="font-bold text-[#f59e0b]">"Father to Hundreds"</span>, George drew strength from his own painful childhood.
                       </p>
                       <p className="text-base md:text-lg leading-relaxed text-gray-700">
                         Growing up as a semi-orphan and struggling under poverty, he once stood on the brink of despair. But in that moment of brokenness, God transformed his life igniting in him a passion to transform the lives of countless others.
@@ -299,17 +299,17 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-r from-[#fde047]/10 to-[#fef3c7]/10 p-6 rounded-2xl border border-[#fde047]/20">
+                  <div className="bg-gradient-to-r from-[#fbbf24]/10 to-[#fde047]/10 p-6 rounded-2xl border border-[#fbbf24]/20">
                     <p className="text-base md:text-lg leading-relaxed text-gray-700">
                       For the past 25 years, Helping Hands India has rendered restless service across the nation. What began with one man's compassion has grown into a movement of hope. Through these years of unwavering dedication, countless children have been rescued, educated, and empowered. Families have been restored, communities uplifted, and lives transformed.
                     </p>
                   </div>
 
                   {/* Final quote */}
-                  <div className="relative mt-10 pt-10 border-t-2 border-[#fbbf24]/20">
+                  <div className="relative mt-10 pt-10 border-t-2 border-[#f59e0b]/20">
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="w-12 h-12 rounded-full bg-white border-4 border-[#fbbf24] flex items-center justify-center shadow-lg">
-                        <Sparkles className="w-6 h-6 text-[#fbbf24]" />
+                      <div className="w-12 h-12 rounded-full bg-white border-4 border-[#f59e0b] flex items-center justify-center shadow-lg">
+                        <Sparkles className="w-6 h-6 text-[#f59e0b]" />
                       </div>
                     </div>
                     <p className="text-base md:text-xl leading-relaxed text-gray-800 font-semibold italic text-center">
@@ -324,7 +324,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-32 bg-gradient-to-br from-[#334155] via-[#475569] to-[#64748b] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E")`
@@ -345,9 +345,9 @@ const Index = () => {
               >
                 <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/40">
                   <span className="text-white font-semibold flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-[#fde047]" />
+                    <Calendar className="h-5 w-5 text-[#fbbf24]" />
                     Since 2000
-                    <Calendar className="h-5 w-5 text-[#fde047]" />
+                    <Calendar className="h-5 w-5 text-[#fbbf24]" />
                   </span>
                 </div>
               </motion.div>
@@ -361,7 +361,7 @@ const Index = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#fde047] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#fbbf24] to-white mx-auto mb-8 rounded-full"
               />
               
               <p className="text-2xl text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
@@ -373,7 +373,7 @@ const Index = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="group bg-white text-[#334155] px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
+                className="group bg-white text-[#0f172a] px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
                 onClick={() => (window.location.href = "/genesis")}
               >
                 Read Our Story
@@ -399,7 +399,7 @@ const Index = () => {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#334155] to-[#475569] bg-clip-text text-transparent mb-6">
+              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#0f172a] to-[#1e293b] bg-clip-text text-transparent mb-6">
                 Our Impact in Numbers
               </h2>
               
@@ -408,7 +408,7 @@ const Index = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#fbbf24] to-[#fde047] mx-auto rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] mx-auto rounded-full"
               />
             </motion.div>
 
@@ -420,15 +420,15 @@ const Index = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-center bg-gradient-to-br from-white to-[#f8fafc] p-8 rounded-3xl shadow-xl border border-[#334155]/20"
+                  className="text-center bg-gradient-to-br from-white to-[#f8fafc] p-8 rounded-3xl shadow-xl border border-[#0f172a]/20"
                 >
-                  <stat.icon className="h-16 w-16 text-[#334155] mx-auto mb-6" />
+                  <stat.icon className="h-16 w-16 text-[#0f172a] mx-auto mb-6" />
                   <motion.div
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 + index * 0.1, type: "spring" }}
-                    className="text-5xl font-heading font-black bg-gradient-to-r from-[#334155] to-[#475569] bg-clip-text text-transparent mb-4"
+                    className="text-5xl font-heading font-black bg-gradient-to-r from-[#0f172a] to-[#1e293b] bg-clip-text text-transparent mb-4"
                   >
                     {stat.value}
                   </motion.div>
@@ -444,7 +444,7 @@ const Index = () => {
       <section className="py-32 bg-gradient-to-b from-[#f8fafc] to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #334155 1px, transparent 1px), linear-gradient(to bottom, #334155 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, #0f172a 1px, transparent 1px), linear-gradient(to bottom, #0f172a 1px, transparent 1px)`,
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
@@ -462,12 +462,12 @@ const Index = () => {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-block bg-gradient-to-r from-[#334155] to-[#475569] text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
+                className="inline-block bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
               >
                 OUR SERVICES
               </motion.div>
               
-              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#334155] to-[#475569] bg-clip-text text-transparent mb-6">
+              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#0f172a] to-[#1e293b] bg-clip-text text-transparent mb-6">
                 How We Serve
               </h2>
               
@@ -476,7 +476,7 @@ const Index = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#fbbf24] to-[#fde047] mx-auto mb-8 rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] mx-auto mb-8 rounded-full"
               />
               
               <p className="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -495,22 +495,22 @@ const Index = () => {
                   whileHover={{ y: -15, scale: 1.05 }}
                   className="group relative"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-[#334155]/40 to-[#475569]/40 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                  <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-[#334155]/20 hover:shadow-2xl transition-all duration-500 h-full">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-[#0f172a]/40 to-[#1e293b]/40 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-[#0f172a]/20 hover:shadow-2xl transition-all duration-500 h-full">
                     <motion.div
                       animate={{ rotate: [0, -10, 10, -10, 0] }}
                       transition={{ duration: 2, repeat: Infinity, delay: index * 0.2 }}
                       className="mb-6"
                     >
-                      <feature.icon className="h-16 w-16 text-[#334155] mx-auto" />
+                      <feature.icon className="h-16 w-16 text-[#0f172a] mx-auto" />
                     </motion.div>
 
-                    <h3 className="text-2xl font-heading font-bold text-[#334155] mb-4 text-center">
+                    <h3 className="text-2xl font-heading font-bold text-[#0f172a] mb-4 text-center">
                       {feature.title}
                     </h3>
 
                     <div
-                      className={`h-1 w-12 bg-gradient-to-r from-[#fbbf24] to-[#fde047] rounded-full mb-4 mx-auto`}
+                      className={`h-1 w-12 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] rounded-full mb-4 mx-auto`}
                     ></div>
 
                     <p className="text-gray-700 leading-relaxed text-center mb-4">
@@ -523,7 +523,7 @@ const Index = () => {
                         whileInView={{ scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", delay: 0.3 }}
-                        className="text-3xl font-black bg-gradient-to-r from-[#fbbf24] to-[#fde047] bg-clip-text text-transparent"
+                        className="text-3xl font-black bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] bg-clip-text text-transparent"
                       >
                         {feature.stat}
                       </motion.div>
@@ -540,9 +540,9 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-gradient-to-r from-[#334155] via-[#475569] to-[#334155] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(251,191,36,0.2),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(251,191,36,0.2),transparent_50%)]"></div>
+      <section className="py-32 bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(245,158,11,0.2),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(245,158,11,0.2),transparent_50%)]"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -558,7 +558,7 @@ const Index = () => {
               className="inline-block mb-8"
             >
               <Heart
-                className="h-20 w-20 text-[#fde047]"
+                className="h-20 w-20 text-[#fbbf24]"
                 fill="currentColor"
               />
             </motion.div>
@@ -576,7 +576,7 @@ const Index = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="group bg-gradient-to-r from-[#fbbf24] to-[#fde047] text-[#334155] px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
+                className="group bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] text-[#0f172a] px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
                 onClick={() => (window.location.href = '/donate')}
               >
                 Make a Donation

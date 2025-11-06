@@ -265,221 +265,221 @@ const ChurchPlanting = () => {
       </section>
 
       {/* India Reality Section */}
-      <section className="py-32 bg-white relative z-10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="text-center mb-20">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
-                >
-                  INDIA'S SPIRITUAL LANDSCAPE
-                </motion.div>
-                
-                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
-                  The Urgent Need
-                </h2>
-                
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto rounded-full"
-                />
-              </div>
+      <section className="py-24 bg-white relative z-10 text-[#0B132B]">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        {/* Header Section */}
+        <div className="text-center mb-14">
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="inline-block bg-gradient-to-r from-[#0B132B] to-[#1C2541] text-[#F5DEB3] px-4 py-1 rounded-full text-xs font-semibold mb-4"
+          >
+            INDIA'S SPIRITUAL LANDSCAPE
+          </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative mb-16"
-              >
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-gold/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-gradient-to-br from-white to-background p-12 md:p-16 rounded-3xl shadow-2xl border border-primary/10">
-                  <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-                    India has over <span className="font-bold text-primary">600,000 villages</span>, and over{" "}
-                    <span className="font-bold text-primary-light">500,000 still have no church presence</span>.
-                  </p>
-                  <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-                    Among <span className="font-bold text-red-600">1,200+ people groups</span>,{" "}
-                    <span className="font-bold text-primary">256+ remain unreached</span>.
-                  </p>
-                  
-                  <div className="relative bg-gradient-to-br from-primary/10 to-primary-light/10 p-8 rounded-2xl border-l-4 border-primary">
-                    <p className="text-2xl text-gray-800 leading-relaxed font-semibold italic">
-                      "India is home to the largest number of unreached people groups in the world. Over 500 million people have never heard the name of Jesus."
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+          <h2 className="text-3xl md:text-5xl font-heading font-extrabold bg-gradient-to-r from-[#0B132B] to-[#D4AF37] bg-clip-text text-transparent mb-4">
+            The Urgent Need
+          </h2>
 
-              {/* Impact Stats */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-8"
-              >
-                {impactStats.map((stat, index) => (
-                  <motion.div
-                    key={stat.label}
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.6 + index * 0.1 }}
-                    className="text-center bg-gradient-to-br from-white to-background p-6 rounded-2xl shadow-lg border border-primary/20"
-                  >
-                    <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      whileInView={{ scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.8 + index * 0.1, type: "spring" }}
-                      className="text-3xl font-black text-primary mb-2"
-                    >
-                      {stat.number}
-                    </motion.div>
-                    <div className="text-gray-600 font-semibold text-sm">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="h-1 w-24 bg-gradient-to-r from-[#0B132B] to-[#D4AF37] mx-auto rounded-full"
+          />
+        </div>
+
+        {/* Content Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative mb-12"
+        >
+          <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/10 to-[#0B132B]/10 rounded-3xl blur-2xl" />
+          <div className="relative bg-gradient-to-br from-white to-[#FAFAFA] p-8 md:p-10 rounded-3xl shadow-xl border border-[#0B132B]/10">
+            <p className="text-lg text-gray-700 leading-relaxed mb-5">
+              India has over <span className="font-bold text-[#0B132B]">600,000 villages</span>, and over{" "}
+              <span className="font-bold text-[#D4AF37]">500,000 still have no church presence</span>.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-5">
+              Among <span className="font-bold text-red-600">1,200+ people groups</span>,{" "}
+              <span className="font-bold text-[#0B132B]">256+ remain unreached</span>.
+            </p>
+
+            <div className="relative bg-gradient-to-br from-[#D4AF37]/10 to-[#0B132B]/10 p-6 rounded-2xl border-l-4 border-[#D4AF37]">
+              <p className="text-base md:text-lg text-gray-800 leading-relaxed font-semibold italic">
+                "India is home to the largest number of unreached people groups in the world. Over 500 million people have never heard the name of Jesus."
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
 
-      {/* Rev. George Fernandes Story */}
-      <section className="py-32 bg-gradient-to-b from-[#FAF8F5] to-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, hsl(var(--primary)) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--primary)) 1px, transparent 1px)`,
-            backgroundSize: '4rem 4rem'
-          }}></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-7xl mx-auto">
+        {/* Impact Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6"
+        >
+          {impactStats.map((stat, index) => (
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              key={stat.label}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-20"
+              transition={{ delay: 0.6 + index * 0.1 }}
+              className="text-center bg-gradient-to-br from-white to-[#F8F8F8] p-5 rounded-2xl shadow-lg border border-[#0B132B]/10"
             >
+              <stat.icon className="h-8 w-8 text-[#0B132B] mx-auto mb-3" />
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
+                transition={{ delay: 0.8 + index * 0.1, type: 'spring' }}
+                className="text-xl font-bold text-[#0B132B] mb-1"
               >
-                THE VISIONARY LEADER
+                {stat.number}
               </motion.div>
-              
-              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
-                Rev. Dr. George Fernandes
-              </h2>
-              
-              <motion.div
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto mb-8 rounded-full"
-              />
+              <div className="text-gray-600 font-medium text-xs">{stat.label}</div>
             </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="relative"
-              >
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl"></div>
-                <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-8 rounded-3xl shadow-2xl border border-[#678E76]/10">
-                  <h3 className="text-3xl font-heading font-bold text-[#678E76] mb-6">Two Unchanging Goals</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="bg-gradient-to-br from-[#678E76] to-[#8BAA92] w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <Award className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-[#678E76] mb-2">To Glorify the Lord</h4>
-                        <p className="text-gray-700">Keeping Christ at the center of all ministry efforts</p>
-                      </div>
+
+      {/* Rev. George Fernandes Story */}
+      <section className="py-32 bg-gradient-to-b from-[#1a2332] to-[#2c3e50] relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, #d4af37 1px, transparent 1px), linear-gradient(to bottom, #d4af37 1px, transparent 1px)`,
+          backgroundSize: '4rem 4rem'
+        }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="inline-block bg-gradient-to-r from-[#1e3a5f] to-[#2c5282] text-[#f5e6d3] px-6 py-2 rounded-full text-sm font-semibold mb-8 border border-[#d4af37]/30"
+            >
+              THE VISIONARY LEADER
+            </motion.div>
+            
+            <h2 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#d4af37] to-[#f5e6d3] bg-clip-text text-transparent mb-6">
+              Rev. Dr. George Fernandes
+            </h2>
+            
+            <motion.div
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="h-2 w-32 bg-gradient-to-r from-[#d4af37] to-[#f5e6d3] mx-auto mb-8 rounded-full"
+            />
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#d4af37]/20 to-[#1e3a5f]/20 rounded-3xl blur-2xl"></div>
+              <div className="relative bg-gradient-to-br from-[#2c3e50] to-[#1a2332] p-8 rounded-3xl shadow-2xl border border-[#d4af37]/30">
+                <h3 className="text-3xl font-bold text-[#d4af37] mb-6">Two Unchanging Goals</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 border border-[#d4af37]/20">
+                      <Award className="w-6 h-6 text-[#d4af37]" />
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="bg-gradient-to-br from-[#C0A58B] to-[#D4BFA3] w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <Heart className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-[#678E76] mb-2">To Win a Perishing Soul</h4>
-                        <p className="text-gray-700">Reaching the lost with the transformative power of the Gospel</p>
-                      </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-[#f5e6d3] mb-2">To Glorify the Lord</h4>
+                      <p className="text-[#c5c5c5]">Keeping Christ at the center of all ministry efforts</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-gradient-to-br from-[#d4af37] to-[#f5e6d3] w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-6 h-6 text-[#1a2332]" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-[#f5e6d3] mb-2">To Win a Perishing Soul</h4>
+                      <p className="text-[#c5c5c5]">Reaching the lost with the transformative power of the Gospel</p>
                     </div>
                   </div>
                 </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="space-y-6"
-              >
-                <p className="text-xl leading-relaxed text-gray-700">
-                  Even during his theological studies, his heart burned for the lost. He reached out to rickshaw pullers and stone cutters, sharing the love of Christ with them, and planted two churches—one in Nacharam and another in Warasiguda, Hyderabad.
-                </p>
-                <p className="text-xl leading-relaxed text-gray-700">
-                  After completing his theological education, he was burdened to train lay leaders and pastors who lacked the opportunity to attend Bible colleges. Despite limited resources, he began on-site Biblical training programs in 2005 in Bangalore, Jammikunta, and Kaluvai, where he successfully trained 120 church planters.
-                </p>
-              </motion.div>
-            </div>
-
-            {/* Koya Tribe Story */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-16 relative"
-            >
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-gold/10 rounded-3xl blur-2xl" />
-              <div className="relative bg-gradient-to-br from-primary to-primary-light p-12 rounded-3xl text-white">
-                <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">
-                  Our Approach
-                </h2>
-                <p className="text-white/90 text-center text-lg mb-8">
-                  A holistic strategy that addresses both spiritual and practical needs
-                </p>
-                
-                <div 
-                  className="inline-flex items-center gap-3 text-gold font-bold text-xl mx-auto justify-center"
-                >
-                  <Sparkles className="h-8 w-8" />
-                  What began with one faithful church planter soon grew to three, then to fifty within seven years
-                  <Sparkles className="h-8 w-8" />
-                </div>
               </div>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
+              <p className="text-xl leading-relaxed text-[#e5e5e5]">
+                Even during his theological studies, his heart burned for the lost. He reached out to rickshaw pullers and stone cutters, sharing the love of Christ with them, and planted two churches—one in Nacharam and another in Warasiguda, Hyderabad.
+              </p>
+              <p className="text-xl leading-relaxed text-[#e5e5e5]">
+                After completing his theological education, he was burdened to train lay leaders and pastors who lacked the opportunity to attend Bible colleges. Despite limited resources, he began on-site Biblical training programs in 2005 in Bangalore, Jammikunta, and Kaluvai, where he successfully trained 120 church planters.
+              </p>
+            </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-16 relative"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#1e3a5f]/30 to-[#d4af37]/30 rounded-3xl blur-2xl" />
+            <div className="relative bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] p-12 rounded-3xl border border-[#d4af37]/30">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center text-[#d4af37]">
+                Our Approach
+              </h2>
+              <p className="text-[#f5e6d3]/90 text-center text-lg mb-8">
+                A holistic strategy that addresses both spiritual and practical needs
+              </p>
+              
+              <div className="flex items-center gap-3 text-[#d4af37] font-bold text-xl justify-center flex-wrap">
+                <Sparkles className="h-8 w-8 flex-shrink-0" />
+                <span className="text-center">What began with one faithful church planter soon grew to three, then to fifty within seven years</span>
+                <Sparkles className="h-8 w-8 flex-shrink-0" />
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Core Values */}
       <section className="py-32 bg-gradient-to-br from-primary via-primary-light to-blue relative overflow-hidden">
@@ -573,6 +573,9 @@ const ChurchPlanting = () => {
       </section>
 
       {/* Theological Seminary */}
+     
+
+      {/* Seminary Section */}
       <section className="py-32 bg-white relative z-10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -588,12 +591,12 @@ const ChurchPlanting = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
+                  className="inline-block bg-gradient-to-r from-[#1e3a5f] to-[#2c5282] text-[#f5e6d3] px-6 py-2 rounded-full text-sm font-semibold mb-6 border border-[#d4af37]/30"
                 >
                   LEADERSHIP DEVELOPMENT
                 </motion.div>
                 
-                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
+                <h2 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#1e3a5f] to-[#2c5282] bg-clip-text text-transparent mb-6">
                   Jeevajala Theological Seminary
                 </h2>
                 
@@ -602,7 +605,7 @@ const ChurchPlanting = () => {
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
-                  className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto rounded-full"
+                  className="h-2 w-32 bg-gradient-to-r from-[#1e3a5f] to-[#d4af37] mx-auto rounded-full"
                 />
               </div>
 
@@ -615,17 +618,17 @@ const ChurchPlanting = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="relative"
                 >
-                  <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
-                  <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-12 rounded-3xl shadow-2xl border border-[#678E76]/10">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-[#1e3a5f]/20 to-[#d4af37]/20 rounded-3xl blur-2xl" />
+                  <div className="relative bg-gradient-to-br from-white to-[#f8f9fa] p-12 rounded-3xl shadow-2xl border border-[#d4af37]/20">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div>
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="bg-gradient-to-br from-[#678E76] to-[#8BAA92] w-16 h-16 rounded-2xl flex items-center justify-center">
-                            <seminary.icon className="w-8 h-8 text-white" />
+                          <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] w-16 h-16 rounded-2xl flex items-center justify-center border border-[#d4af37]/30">
+                            <seminary.icon className="w-8 h-8 text-[#d4af37]" />
                           </div>
                           <div>
-                            <h3 className="text-3xl font-heading font-bold text-[#678E76]">{seminary.title}</h3>
-                            <p className="text-[#8BAA92] font-semibold">{seminary.year}</p>
+                            <h3 className="text-3xl font-bold text-[#1e3a5f]">{seminary.title}</h3>
+                            <p className="text-[#2c5282] font-semibold">{seminary.year}</p>
                           </div>
                         </div>
                         <p className="text-xl leading-relaxed text-gray-700 mb-6">
@@ -641,17 +644,17 @@ const ChurchPlanting = () => {
                               transition={{ delay: 0.4 + idx * 0.1 }}
                               className="flex items-center gap-2 text-gray-700"
                             >
-                              <div className="w-2 h-2 bg-[#678E76] rounded-full"></div>
+                              <div className="w-2 h-2 bg-[#d4af37] rounded-full"></div>
                               {achievement}
                             </motion.div>
                           ))}
                         </div>
                       </div>
-                      <div className="bg-gradient-to-br from-[#678E76] to-[#8BAA92] p-8 rounded-2xl text-white text-center">
-                        <GraduationCap className="w-16 h-16 mx-auto mb-4" />
-                        <div className="text-4xl font-black mb-2">80+</div>
-                        <div className="text-lg opacity-90">Students Trained</div>
-                        <div className="mt-4 text-sm opacity-80">
+                      <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] p-8 rounded-2xl text-white text-center border border-[#d4af37]/30">
+                        <GraduationCap className="w-16 h-16 mx-auto mb-4 text-[#d4af37]" />
+                        <div className="text-4xl font-black mb-2 text-[#f5e6d3]">80+</div>
+                        <div className="text-lg text-[#f5e6d3]/90">Students Trained</div>
+                        <div className="mt-4 text-sm text-[#f5e6d3]/80">
                           Equipping indigenous leaders for unreached communities
                         </div>
                       </div>
@@ -665,9 +668,9 @@ const ChurchPlanting = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-32 bg-gradient-to-r from-[#C0A58B] via-[#D4BFA3] to-[#C0A58B] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
+      <section className="py-32 bg-gradient-to-r from-[#d4af37] via-[#f5e6d3] to-[#d4af37] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.3),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.3),transparent_50%)]"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -677,41 +680,32 @@ const ChurchPlanting = () => {
             transition={{ duration: 0.8 }}
             className="max-w-5xl mx-auto text-center"
           >
-            <motion.div
-              animate={{ rotate: [0, 5, -5, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="inline-block mb-8"
-            >
-              <Cross className="h-20 w-20 text-white" />
-            </motion.div>
+            <div className="inline-block mb-8">
+              <Cross className="h-20 w-20 text-[#1e3a5f]" />
+            </div>
             
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white mb-8 leading-tight">
+            <h2 className="text-5xl md:text-7xl font-bold text-[#1a2332] mb-8 leading-tight">
               Join the Great Commission
             </h2>
             
-            <p className="text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl text-[#2c3e50] mb-12 max-w-3xl mx-auto leading-relaxed">
               "How can they believe in the one of whom they have not heard?" — Romans 10:14
             </p>
             
-            <div className="bg-white/20 backdrop-blur-md p-8 rounded-3xl border border-white/30 mb-12">
-              <p className="text-xl text-white leading-relaxed italic mb-4">
+            <div className="bg-[#1e3a5f]/10 backdrop-blur-md p-8 rounded-3xl border border-[#1e3a5f]/20 mb-12">
+              <p className="text-xl text-[#1a2332] leading-relaxed italic mb-4">
                 "After this I looked, and there before me was a great multitude that no one could count, from every nation, tribe, people and language, standing before the throne..."
               </p>
-              <p className="text-white font-semibold">— Revelation 7:9</p>
+              <p className="text-[#1e3a5f] font-semibold">— Revelation 7:9</p>
             </div>
             
             <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
+              className="group bg-gradient-to-r from-[#1e3a5f] to-[#2c5282] text-[#f5e6d3] px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-[#1a2332]/20 hover:shadow-[#1e3a5f]/50"
             >
               Support Church Planting
-              <motion.div
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                <ArrowRight className="h-6 w-6" />
-              </motion.div>
+              <ArrowRight className="h-6 w-6" />
             </motion.button>
             
             <motion.div
@@ -733,18 +727,18 @@ const ChurchPlanting = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.6 + index * 0.1 }}
-                  className="bg-white/20 backdrop-blur-md p-6 rounded-2xl border border-white/30"
+                  className="bg-[#1e3a5f]/10 backdrop-blur-md p-6 rounded-2xl border border-[#1e3a5f]/20"
                 >
                   <motion.div
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.8 + index * 0.1, type: "spring" }}
-                    className="text-5xl font-black text-white mb-2"
+                    className="text-5xl font-black text-[#1a2332] mb-2"
                   >
                     {stat.number}
                   </motion.div>
-                  <div className="text-white/80 font-semibold">{stat.label}</div>
+                  <div className="text-[#2c3e50] font-semibold">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>

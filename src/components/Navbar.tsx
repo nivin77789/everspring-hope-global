@@ -94,18 +94,18 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <motion.div
-              className="h-14 w-14 bg-white rounded-2xl flex items-center justify-center shadow-lg transition-all group-hover:shadow-xl group-hover:shadow-gold/30"
+              className="h-12 w-12 bg-white rounded-xl flex items-center justify-center shadow-lg transition-all group-hover:shadow-xl group-hover:shadow-gold/30 border border-gray-100"
               whileHover={{ scale: 1.1, rotate: [0, -10, 10, -10, 0] }}
               transition={{ duration: 0.5 }}
             >
               <img
                 src="/images/logo.png"
                 alt="EverSpring International Logo"
-                className="h-10 w-10 object-contain"
+                className="h-8 w-8 object-contain"
               />
             </motion.div>
-            <div className={`text-2xl font-heading font-bold transition-colors ${
-              isScrolled ? "text-primary group-hover:text-gold" : "text-white group-hover:text-gold"
+            <div className={`text-lg font-heading font-bold transition-colors ${
+              isScrolled ? "text-slate-800 group-hover:text-gold" : "text-white group-hover:text-gold"
             }`}>
               EverSpring International
             </div>
@@ -125,7 +125,9 @@ const Navbar = () => {
                     <Link
                       to={link.path}
                       className={`hover:text-gold transition-colors font-medium ${
-                        isScrolled ? "text-primary" : "text-white"
+                        location.pathname === link.path 
+                          ? "text-gold" 
+                          : isScrolled ? "text-slate-700" : "text-white"
                       }`}
                       onClick={(e) => handleDropdownClick(e, link.name)}
                     >
@@ -134,7 +136,7 @@ const Navbar = () => {
                     <button
                       onClick={(e) => handleDropdownButtonClick(e, link.name)}
                       className={`hover:text-gold transition-colors ${
-                        isScrolled ? "text-primary" : "text-white"
+                        isScrolled ? "text-slate-700" : "text-white"
                       }`}
                     >
                       <ChevronDown className="h-4 w-4" />
@@ -146,13 +148,13 @@ const Navbar = () => {
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        className="absolute top-full left-0 mt-2 w-48 bg-card shadow-elegant rounded-lg overflow-hidden z-50 border border-border"
+                        className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg overflow-hidden z-50 shadow-xl border border-gray-200"
                       >
                         {link.dropdown.map((item) => (
                           <Link
                             key={item.name}
                             to={item.path}
-                            className="block px-4 py-3 text-foreground hover:bg-secondary transition-colors border-b border-border last:border-b-0"
+                            className="block px-4 py-3 text-slate-700 hover:bg-blue-50 hover:text-gold transition-colors border-b border-gray-100 last:border-b-0"
                             onClick={() => handleDropdownItemClick(item.path)}
                           >
                             {item.name}
@@ -169,7 +171,7 @@ const Navbar = () => {
                   className={`hover:text-gold transition-colors font-medium ${
                     location.pathname === link.path 
                       ? "text-gold" 
-                      : isScrolled ? "text-primary" : "text-white"
+                      : isScrolled ? "text-slate-700" : "text-white"
                   }`}
                 >
                   {link.name}
@@ -177,7 +179,7 @@ const Navbar = () => {
               )
             )}
             <Link to="/donate">
-              <Button className="bg-gold hover:bg-gold-dark text-gold-foreground font-semibold px-6 hover-glow">
+              <Button className="bg-gradient-to-r from-gold to-yellow-500 hover:from-yellow-500 hover:to-gold text-slate-900 font-semibold px-6 shadow-lg hover:shadow-gold/50 transition-all duration-300">
                 Donate
               </Button>
             </Link>
@@ -185,7 +187,9 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white"
+            className={`lg:hidden transition-colors ${
+              isScrolled ? "text-slate-700" : "text-white"
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -199,7 +203,7 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-primary/95 backdrop-blur-md pb-6"
+              className="lg:hidden bg-white backdrop-blur-md pb-6 shadow-lg"
             >
               {navLinks.map((link) =>
                 link.dropdown ? (
@@ -207,14 +211,14 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <Link
                         to={link.path}
-                        className="flex-1 px-4 py-3 text-white hover:text-gold transition-colors"
+                        className="flex-1 px-4 py-3 text-slate-700 hover:text-gold transition-colors"
                         onClick={(e) => handleDropdownClick(e, link.name)}
                       >
                         {link.name}
                       </Link>
                       <button
                         onClick={() => setOpenDropdown(openDropdown === link.name ? null : link.name)}
-                        className="px-4 py-3 text-white hover:text-gold transition-colors"
+                        className="px-4 py-3 text-slate-700 hover:text-gold transition-colors"
                       >
                         <ChevronDown
                           className={`h-4 w-4 transition-transform ${
@@ -229,13 +233,13 @@ const Navbar = () => {
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: "auto" }}
                           exit={{ opacity: 0, height: 0 }}
-                          className="bg-primary-dark overflow-hidden"
+                          className="overflow-hidden bg-gray-50"
                         >
                           {link.dropdown.map((item) => (
                             <Link
                               key={item.name}
                               to={item.path}
-                              className="block px-8 py-2 text-white/90 hover:text-gold transition-colors"
+                              className="block px-8 py-2 text-slate-600 hover:text-gold transition-colors"
                               onClick={() => handleDropdownItemClick(item.path)}
                             >
                               {item.name}
@@ -249,7 +253,7 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     to={link.path}
-                    className="block px-4 py-3 text-white hover:text-gold transition-colors"
+                    className="block px-4 py-3 text-slate-700 hover:text-gold transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -258,7 +262,7 @@ const Navbar = () => {
               )}
               <div className="px-4 pt-3">
                 <Link to="/donate" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="w-full bg-gold hover:bg-gold-dark text-gold-foreground font-semibold">
+                  <Button className="w-full bg-gradient-to-r from-gold to-yellow-500 hover:from-yellow-500 hover:to-gold text-slate-900 font-semibold shadow-lg hover:shadow-gold/50 transition-all duration-300">
                     Donate
                   </Button>
                 </Link>

@@ -26,7 +26,7 @@ const SpecialCare = () => {
       icon: HeartPulse,
       children: 50,
       description: "Comprehensive care for HIV-infected and affected children and families",
-      color: "from-[#678E76] to-[#557366]",
+      color: "from-primary to-primary-dark",
       stats: ["Medical Support", "Nutrition Care", "Education", "Counseling"]
     },
     {
@@ -35,7 +35,7 @@ const SpecialCare = () => {
       icon: Stethoscope,
       children: 200,
       description: "Mobile healthcare services reaching remote communities with essential medical care",
-      color: "from-[#8BAA92] to-[#678E76]",
+      color: "from-primary-light to-primary",
       stats: ["Mobile Clinics", "Vaccination", "Health Screenings", "Medication"]
     },
   ];
@@ -158,7 +158,7 @@ const SpecialCare = () => {
             y: mousePosition.y / 50,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-[#678E76]/20 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -166,7 +166,7 @@ const SpecialCare = () => {
             y: -mousePosition.y / 40,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C0A58B]/20 rounded-full blur-3xl"
+          className="absolute top-1/3 -right-40 w-96 h-96 bg-gold/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -174,13 +174,13 @@ const SpecialCare = () => {
             y: -mousePosition.y / 60,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#8BAA92]/20 rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/3 w-96 h-96 bg-primary-light/20 rounded-full blur-3xl"
         />
       </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#C0A58B]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-gold">
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-0 left-0 w-full h-full" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -244,9 +244,9 @@ const SpecialCare = () => {
               >
                 <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/40">
                   <span className="text-white font-semibold flex items-center gap-2">
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-gold" fill="currentColor" />
                     Specialized Medical Care
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-gold" fill="currentColor" />
                   </span>
                 </div>
               </motion.div>
@@ -265,7 +265,7 @@ const SpecialCare = () => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="inline-block bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent"
                 >
                   Medical Care
                 </motion.span>
@@ -275,7 +275,7 @@ const SpecialCare = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="h-2 w-48 bg-gradient-to-r from-[#C0A58B] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-48 bg-gradient-to-r from-gold to-white mx-auto mb-8 rounded-full"
               />
               
               <motion.p
@@ -333,15 +333,15 @@ const SpecialCare = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="text-center bg-gradient-to-br from-[#FAF8F5] to-white p-6 rounded-2xl shadow-lg border border-[#678E76]/20"
+                className="text-center bg-gradient-to-br from-background to-white p-6 rounded-2xl shadow-lg border border-primary/20"
               >
-                <stat.icon className="h-12 w-12 text-[#678E76] mx-auto mb-4" />
+                <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + index * 0.1, type: "spring" }}
-                  className="text-3xl font-black text-[#678E76] mb-2"
+                  className="text-3xl font-black text-primary mb-2"
                 >
                   {stat.number}
                 </motion.div>
@@ -356,7 +356,7 @@ const SpecialCare = () => {
       <section className="py-32 bg-gradient-to-b from-[#FAF8F5] to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #678E76 1px, transparent 1px), linear-gradient(to bottom, #678E76 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, hsl(var(--primary)) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--primary)) 1px, transparent 1px)`,
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
@@ -404,15 +404,15 @@ const SpecialCare = () => {
                   whileHover={{ y: -10, scale: 1.02 }}
                   className="group relative"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                  <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] rounded-3xl shadow-2xl border border-[#678E76]/10 h-full overflow-hidden">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-gold/20 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-white to-background rounded-3xl shadow-2xl border border-primary/10 h-full overflow-hidden">
                     <div className="p-8">
                       <div className="flex items-start justify-between mb-6">
                         <motion.div
                           animate={{ rotate: [0, -5, 5, 0] }}
                           transition={{ duration: 3, repeat: Infinity, delay: index * 0.5 }}
                         >
-                          <program.icon className="h-16 w-16 text-[#678E76]" />
+                          <program.icon className="h-16 w-16 text-primary" />
                         </motion.div>
                         
                         <div className="text-right">
@@ -421,7 +421,7 @@ const SpecialCare = () => {
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ type: "spring", delay: 0.3 }}
-                            className="text-4xl font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-1"
+                            className="text-4xl font-black bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent mb-1"
                           >
                             {program.children}
                           </motion.div>
@@ -429,10 +429,10 @@ const SpecialCare = () => {
                         </div>
                       </div>
                       
-                      <h3 className="text-3xl font-heading font-bold text-[#678E76] mb-2">
+                      <h3 className="text-3xl font-heading font-bold text-primary mb-2">
                         {program.title}
                       </h3>
-                      <p className="text-lg text-[#8BAA92] font-semibold mb-4">{program.location}</p>
+                      <p className="text-lg text-primary-light font-semibold mb-4">{program.location}</p>
                       
                       <div className={`h-1 w-24 bg-gradient-to-r ${program.color} rounded-full mb-6`}></div>
                       

@@ -131,7 +131,7 @@ const ChurchPlanting = () => {
             y: mousePosition.y / 50,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-[#678E76]/20 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -139,7 +139,7 @@ const ChurchPlanting = () => {
             y: -mousePosition.y / 40,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C0A58B]/20 rounded-full blur-3xl"
+          className="absolute top-1/3 -right-40 w-96 h-96 bg-gold/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -147,13 +147,13 @@ const ChurchPlanting = () => {
             y: -mousePosition.y / 60,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#8BAA92]/20 rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/3 w-96 h-96 bg-primary-light/20 rounded-full blur-3xl"
         />
       </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#C0A58B]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-gold">
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-0 left-0 w-full h-full" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -191,9 +191,9 @@ const ChurchPlanting = () => {
               >
                 <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/40">
                   <span className="text-white font-semibold flex items-center gap-2">
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-gold" fill="currentColor" />
                     Great Commission Ministry
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-gold" fill="currentColor" />
                   </span>
                 </div>
               </motion.div>
@@ -212,7 +212,7 @@ const ChurchPlanting = () => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="inline-block bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent"
                 >
                   Planting
                 </motion.span>
@@ -222,7 +222,7 @@ const ChurchPlanting = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="h-2 w-48 bg-gradient-to-r from-[#C0A58B] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-48 bg-gradient-to-r from-gold to-white mx-auto mb-8 rounded-full"
               />
               
               <motion.p
@@ -305,18 +305,18 @@ const ChurchPlanting = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative mb-16"
               >
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#678E76]/10">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-gold/20 rounded-3xl blur-2xl" />
+                <div className="relative bg-gradient-to-br from-white to-background p-12 md:p-16 rounded-3xl shadow-2xl border border-primary/10">
                   <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-                    India has over <span className="font-bold text-[#678E76]">600,000 villages</span>, and over{" "}
-                    <span className="font-bold text-[#8BAA92]">500,000 still have no church presence</span>.
+                    India has over <span className="font-bold text-primary">600,000 villages</span>, and over{" "}
+                    <span className="font-bold text-primary-light">500,000 still have no church presence</span>.
                   </p>
                   <p className="text-2xl text-gray-700 leading-relaxed mb-8">
                     Among <span className="font-bold text-red-600">1,200+ people groups</span>,{" "}
-                    <span className="font-bold text-[#678E76]">256+ remain unreached</span>.
+                    <span className="font-bold text-primary">256+ remain unreached</span>.
                   </p>
                   
-                  <div className="relative bg-gradient-to-br from-[#678E76]/10 to-[#8BAA92]/10 p-8 rounded-2xl border-l-4 border-[#678E76]">
+                  <div className="relative bg-gradient-to-br from-primary/10 to-primary-light/10 p-8 rounded-2xl border-l-4 border-primary">
                     <p className="text-2xl text-gray-800 leading-relaxed font-semibold italic">
                       "India is home to the largest number of unreached people groups in the world. Over 500 million people have never heard the name of Jesus."
                     </p>
@@ -339,15 +339,15 @@ const ChurchPlanting = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.6 + index * 0.1 }}
-                    className="text-center bg-gradient-to-br from-white to-[#FAF8F5] p-6 rounded-2xl shadow-lg border border-[#678E76]/20"
+                    className="text-center bg-gradient-to-br from-white to-background p-6 rounded-2xl shadow-lg border border-primary/20"
                   >
-                    <stat.icon className="h-12 w-12 text-[#678E76] mx-auto mb-4" />
+                    <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                     <motion.div
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.8 + index * 0.1, type: "spring" }}
-                      className="text-3xl font-black text-[#678E76] mb-2"
+                      className="text-3xl font-black text-primary mb-2"
                     >
                       {stat.number}
                     </motion.div>
@@ -364,7 +364,7 @@ const ChurchPlanting = () => {
       <section className="py-32 bg-gradient-to-b from-[#FAF8F5] to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #678E76 1px, transparent 1px), linear-gradient(to bottom, #678E76 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, hsl(var(--primary)) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--primary)) 1px, transparent 1px)`,
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
@@ -459,21 +459,22 @@ const ChurchPlanting = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mt-16 relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/10 to-[#C0A58B]/10 rounded-3xl blur-2xl" />
-              <div className="relative bg-gradient-to-br from-[#678E76] to-[#8BAA92] p-12 rounded-3xl text-white">
-                <h3 className="text-4xl font-heading font-bold mb-6 text-center">The Koya Tribe Breakthrough</h3>
-                <p className="text-xl leading-relaxed mb-6 text-center">
-                  In 2009, Pastor George accepted an invitation from his friend, Pastor Danasari Sreenu, to visit the Koya tribal community in Bhadrachalam. Deeply moved by the sight of children suffering from malnutrition and eating mud due to extreme poverty, he stepped out in faith—despite financial challenges—to start a Children's Home and support Pastor Sreenu in spreading the Gospel among the Koya people.
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-gold/10 rounded-3xl blur-2xl" />
+              <div className="relative bg-gradient-to-br from-primary to-primary-light p-12 rounded-3xl text-white">
+                <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">
+                  Our Approach
+                </h2>
+                <p className="text-white/90 text-center text-lg mb-8">
+                  A holistic strategy that addresses both spiritual and practical needs
                 </p>
-                <motion.div
-                  animate={{ scale: [1, 1.05, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="inline-flex items-center gap-3 text-[#C0A58B] font-bold text-xl mx-auto justify-center"
+                
+                <div 
+                  className="inline-flex items-center gap-3 text-gold font-bold text-xl mx-auto justify-center"
                 >
                   <Sparkles className="h-8 w-8" />
                   What began with one faithful church planter soon grew to three, then to fifty within seven years
                   <Sparkles className="h-8 w-8" />
-                </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -481,7 +482,7 @@ const ChurchPlanting = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-32 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#8BAA92] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-br from-primary via-primary-light to-blue relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E")`

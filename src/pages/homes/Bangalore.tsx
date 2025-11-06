@@ -192,7 +192,7 @@ const Bangalore = () => {
       </section>
 
       {/* Who We Are */}
-      <section className="py-32 bg-white relative z-10">
+     <section className="py-32 bg-white relative z-10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -212,7 +212,7 @@ const Bangalore = () => {
                   OUR STORY
                 </motion.div>
                 
-                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
+                <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
                   Who We Are
                 </h2>
                 
@@ -234,17 +234,17 @@ const Bangalore = () => {
               >
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#1E3A5F]/20 to-[#C9A96A]/20 rounded-3xl blur-2xl" />
                 <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#1E3A5F]/10">
-                  <p className="text-2xl text-gray-700 leading-relaxed mb-8">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
                     New Hope Children Home in Bengaluru is a <span className="font-bold text-[#1E3A5F]">safe haven</span> for some of the most vulnerable children in society. Currently, it is home to{" "}
                     <motion.span
                       whileHover={{ scale: 1.1 }}
-                      className="inline-block font-black text-3xl bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent cursor-default"
+                      className="inline-block font-black text-xl bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent cursor-default"
                     >
                       40 children
                     </motion.span>{" "}
                     who come from backgrounds of orphanhood, semi-orphanhood, abandonment, and children rescued from streets and slums.
                   </p>
-                  <p className="text-2xl text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed">
                     Referrals come through recognised institutions, government officials, police departments, village elders, and community leaders, ensuring that children most in need are given a new beginning.
                   </p>
                 </div>

@@ -23,13 +23,13 @@ const Genesis = () => {
           <motion.div 
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=80')"
+              backgroundImage: "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80')"
             }}
             initial={{ scale: 1 }}
             animate={{ scale: 1.1 }}
             transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
           />
-          <div className="absolute inset-0 bg-gradient-hero/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 via-slate-900/85 to-indigo-950/90" />
         </div>
         
         {/* Floating Elements */}
@@ -112,14 +112,7 @@ const Genesis = () => {
                 The Heart of India's Need
               </h2>
               
-              {/* Image */}
-              <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=80"
-                  alt="Children in India"
-                  className="w-full h-64 object-cover"
-                />
-              </div>
+        
               
               <p className="text-responsive-base text-foreground/80 leading-relaxed mb-6">
                 India, the world's second most populous nation, is home to over 1.2 billion people
@@ -191,18 +184,7 @@ const Genesis = () => {
         </div>
       </section>
 
-      <ImageGallery
-        title="Our Journey in Pictures"
-        images={[
-          "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-          "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80",
-          "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-          "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&q=80",
-          "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
-          "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
-        ]}
-        className="bg-white"
-      />
+
 
       <Footer />
     </div>

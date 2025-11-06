@@ -50,11 +50,11 @@ const Donate = () => {
 
   const bankDetails = {
     accountName: "EverSpring International",
-    accountNumber: "1234567890",
-    ifscCode: "ABCD0001234",
-    bankName: "State Bank of India",
-    branch: "Main Branch, Bangalore",
-    upiId: "everspring@upi"
+    accountNumber: "On Pogress",
+    ifscCode: "On Pogress",
+    bankName: "On Pogress",
+    branch: "Bangalore",
+    upiId: "On Pogress"
   };
 
   const copyToClipboard = (text, field) => {
@@ -68,82 +68,124 @@ const Donate = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-white pt-20 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <motion.div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&q=80')"
-            }}
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{ duration: 20, repeat: Infinity }}
-          />
-          <div className="absolute inset-0 bg-gradient-hero/85" />
-        </div>
+   
+    <section className="relative min-h-[70vh] flex items-center justify-center text-white pt-20 overflow-hidden">
+      {/* Background Image with Navy Gradient */}
+      <div className="absolute inset-0">
+        <motion.div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&q=80')"
+          }}
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 20, repeat: Infinity }}
+        />
         
-        {/* Floating hearts */}
-        <div className="absolute inset-0">
-          {[...Array(15)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute text-gold/20"
-              initial={{
-                x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-                y: typeof window !== 'undefined' ? window.innerHeight + 50 : 1000,
-              }}
-              animate={{
-                y: -50,
-                x: [null, Math.random() * 50 - 25],
-                rotate: [0, 360],
-              }}
-              transition={{
-                duration: 15 + i * 2,
-                repeat: Infinity,
-                delay: i * 1,
-                ease: "linear",
-              }}
-            >
-              <Heart className="w-8 h-8" />
-            </motion.div>
-          ))}
-        </div>
+        {/* Navy Blue Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-slate-900/70 to-indigo-950/75" />
         
-        <div className="absolute inset-0 opacity-10 animate-float">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+')]"></div>
-        </div>
-
-        <div className="container mx-auto px-4 text-center relative z-10">
+        {/* Additional depth with radial gradients - Golden glow on both sides */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: "radial-gradient(ellipse at top left, rgba(251, 191, 36, 0.12) 0%, transparent 40%), radial-gradient(ellipse at top right, rgba(251, 191, 36, 0.15) 0%, transparent 40%), radial-gradient(ellipse at bottom, rgba(59, 130, 246, 0.08) 0%, transparent 50%)"
+          }}
+        />
+      </div>
+      
+      {/* Floating hearts */}
+      <div className="absolute inset-0">
+        {[...Array(15)].map((_, i) => (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
+            key={i}
+            className="absolute"
+            style={{ color: "hsl(45 90% 55% / 0.2)" }}
+            initial={{
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
+              y: typeof window !== 'undefined' ? window.innerHeight + 50 : 1000,
+            }}
+            animate={{
+              y: -50,
+              x: [null, Math.random() * 50 - 25],
+              rotate: [0, 360],
+            }}
+            transition={{
+              duration: 15 + i * 2,
+              repeat: Infinity,
+              delay: i * 1,
+              ease: "linear",
+            }}
           >
-            <Heart className="h-16 w-16 md:h-20 md:w-20 mx-auto mb-4 md:mb-6 text-gold animate-glow" />
-            <h1 className="text-4xl md:text-7xl font-heading font-bold mb-4 md:mb-6 px-4">
-              Transform Lives Today
-            </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-6 md:mb-8 text-white/90 px-4">
-              Your generosity brings hope, dignity, and a brighter future to vulnerable children,
-              elders, and communities across India
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#donate-options"
-                className="bg-gold hover:bg-gold-dark text-gold-foreground px-8 py-4 rounded-lg font-semibold text-lg hover-glow transition-all inline-block"
-              >
-                Donate Now
-              </a>
-              <a
-                href="#impact"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-all inline-block"
-              >
-                See Our Impact
-              </a>
-            </div>
+            <Heart className="w-8 h-8" />
           </motion.div>
-        </div>
-      </section>
+        ))}
+      </div>
+      
+     
+      <div className="container mx-auto px-4 text-center relative z-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.div
+            animate={{
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <Heart 
+              className="h-16 w-16 md:h-20 md:w-20 mx-auto mb-4 md:mb-6" 
+              style={{ 
+                color: "hsl(45 90% 55%)",
+                filter: "drop-shadow(0 0 20px hsl(45 90% 55% / 0.8))"
+              }}
+            />
+          </motion.div>
+          <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 px-4">
+            Transform Lives Today
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-6 md:mb-8 text-white/90 px-4">
+            Your generosity brings hope, dignity, and a brighter future to vulnerable children,
+            elders, and communities across India
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+            <motion.a
+              href="#donate-options"
+              className="px-8 py-4 rounded-lg font-semibold text-lg transition-all inline-block"
+              style={{
+                background: "linear-gradient(90deg, hsl(45 90% 55%), hsl(45 90% 65%))",
+                color: "hsl(45 20% 15%)"
+              }}
+              whileHover={{ 
+                scale: 1.05,
+                boxShadow: "0 0 30px hsl(45 90% 55% / 0.6)"
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Donate Now
+            </motion.a>
+            <motion.a
+              href="#impact"
+              className="bg-transparent border-2 border-white text-white hover:bg-white px-8 py-4 rounded-lg font-semibold text-lg transition-all inline-block"
+              whileHover={{ 
+                scale: 1.05,
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                color: "hsl(220 40% 20%)"
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              See Our Impact
+            </motion.a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+ 
 
       {/* Impact Stats */}
       <section id="impact" className="py-16 bg-secondary">

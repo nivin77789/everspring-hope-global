@@ -24,31 +24,31 @@ const Bangalore = () => {
       icon: Users,
       title: "Family Atmosphere",
       description: "Children grow up not in an institution, but in a home filled with love, acceptance, and belonging.",
-      color: "from-[#678E76] to-[#557366]",
+      color: "from-[#1E3A5F] to-[#2D4A7C]",
     },
     {
       icon: GraduationCap,
       title: "Quality Education",
       description: "All children attend reputed English medium schools in Bengaluru, giving them a strong foundation for their future.",
-      color: "from-[#C0A58B] to-[#A88D73]",
+      color: "from-[#C9A96A] to-[#D4B77D]",
     },
     {
       icon: Shield,
       title: "Healthcare & Wellbeing",
       description: "Special care is given to HIV-affected and physically weak children, ensuring health and dignity.",
-      color: "from-[#8BAA92] to-[#678E76]",
+      color: "from-[#2D4A7C] to-[#3D5A8C]",
     },
     {
       icon: Heart,
       title: "Faith & Values",
       description: "Children are nurtured with strong moral and spiritual values that shape their character.",
-      color: "from-[#D4BFA3] to-[#C0A58B]",
+      color: "from-[#D4B77D] to-[#DFC690]",
     },
     {
       icon: Sparkles,
       title: "Future Empowerment",
       description: "Beyond academics, children are encouraged to develop skills, talents, and leadership qualities.",
-      color: "from-[#678E76] to-[#8BAA92]",
+      color: "from-[#1E3A5F] to-[#2D4A7C]",
     },
   ];
 
@@ -60,7 +60,7 @@ const Bangalore = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5]">
+    <div className="min-h-screen bg-[#F8F9FA]">
       <Navbar />
 
       {/* Animated Background Orbs */}
@@ -71,7 +71,7 @@ const Bangalore = () => {
             y: mousePosition.y / 50,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-[#678E76]/20 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-[#1E3A5F]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -79,7 +79,7 @@ const Bangalore = () => {
             y: -mousePosition.y / 40,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C0A58B]/20 rounded-full blur-3xl"
+          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C9A96A]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -87,13 +87,13 @@ const Bangalore = () => {
             y: -mousePosition.y / 60,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#8BAA92]/20 rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#2D4A7C]/20 rounded-full blur-3xl"
         />
       </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#C0A58B]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#C9A96A]">
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-0 left-0 w-full h-full" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -118,9 +118,9 @@ const Bangalore = () => {
               >
                 <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/40">
                   <span className="text-white font-semibold flex items-center gap-2">
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-[#C9A96A]" fill="currentColor" />
                     Est. December 23, 2001
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-[#C9A96A]" fill="currentColor" />
                   </span>
                 </div>
               </motion.div>
@@ -139,7 +139,7 @@ const Bangalore = () => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="inline-block bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] bg-clip-text text-transparent"
                 >
                   Children Home
                 </motion.span>
@@ -149,7 +149,7 @@ const Bangalore = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="h-2 w-48 bg-gradient-to-r from-[#C0A58B] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-48 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-8 rounded-full"
               />
               
               <motion.p
@@ -207,12 +207,12 @@ const Bangalore = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
+                  className="inline-block bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
                 >
                   OUR STORY
                 </motion.div>
                 
-                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
+                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
                   Who We Are
                 </h2>
                 
@@ -221,7 +221,7 @@ const Bangalore = () => {
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
-                  className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto rounded-full"
+                  className="h-2 w-32 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto rounded-full"
                 />
               </div>
               
@@ -232,13 +232,13 @@ const Bangalore = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#678E76]/10">
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#1E3A5F]/20 to-[#C9A96A]/20 rounded-3xl blur-2xl" />
+                <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#1E3A5F]/10">
                   <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-                    New Hope Children Home in Bengaluru is a <span className="font-bold text-[#678E76]">safe haven</span> for some of the most vulnerable children in society. Currently, it is home to{" "}
+                    New Hope Children Home in Bengaluru is a <span className="font-bold text-[#1E3A5F]">safe haven</span> for some of the most vulnerable children in society. Currently, it is home to{" "}
                     <motion.span
                       whileHover={{ scale: 1.1 }}
-                      className="inline-block font-black text-3xl bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent cursor-default"
+                      className="inline-block font-black text-3xl bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent cursor-default"
                     >
                       40 children
                     </motion.span>{" "}
@@ -255,9 +255,9 @@ const Bangalore = () => {
       </section>
 
       {/* Journey, Vision & Mission */}
-      <section className="py-32 bg-gradient-to-b from-[#FAF8F5] to-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-[#F8F9FA] to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#678E76_1px,transparent_1px),linear-gradient(to_bottom,#678E76_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E3A5F_1px,transparent_1px),linear-gradient(to_bottom,#1E3A5F_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         </div>
         
         <div className="container mx-auto px-4 relative">
@@ -272,24 +272,24 @@ const Bangalore = () => {
                 whileHover={{ y: -10 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#678E76] to-[#8BAA92] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#678E76]/20 h-full">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#1E3A5F]/20 h-full">
                   <motion.div
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className="bg-gradient-to-br from-[#678E76] to-[#8BAA92] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
+                    className="bg-gradient-to-br from-[#1E3A5F] to-[#2D4A7C] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
                   >
                     <Home className="h-10 w-10 text-white" />
                   </motion.div>
                   
-                  <h3 className="text-4xl font-heading font-black text-[#678E76] mb-6">
+                  <h3 className="text-4xl font-heading font-black text-[#1E3A5F] mb-6">
                     Our Journey
                   </h3>
                   
-                  <div className="h-1 w-16 bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] rounded-full mb-6"></div>
+                  <div className="h-1 w-16 bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] rounded-full mb-6"></div>
                   
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    The Home began on <span className="font-bold text-[#678E76]">23rd December 2001</span> in a modest way with just 10 children. By God's grace and through committed service, what began as a small initiative has now become a family of hope, care, and transformation.
+                    The Home began on <span className="font-bold text-[#1E3A5F]">23rd December 2001</span> in a modest way with just 10 children. By God's grace and through committed service, what began as a small initiative has now become a family of hope, care, and transformation.
                   </p>
                 </div>
               </motion.div>
@@ -303,21 +303,21 @@ const Bangalore = () => {
                 whileHover={{ y: -10 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#8BAA92] to-[#C0A58B] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#8BAA92]/20 h-full">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#2D4A7C] to-[#C9A96A] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#2D4A7C]/20 h-full">
                   <motion.div
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className="bg-gradient-to-br from-[#8BAA92] to-[#C0A58B] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
+                    className="bg-gradient-to-br from-[#2D4A7C] to-[#C9A96A] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
                   >
                     <Heart className="h-10 w-10 text-white" />
                   </motion.div>
                   
-                  <h3 className="text-4xl font-heading font-black text-[#8BAA92] mb-6">
+                  <h3 className="text-4xl font-heading font-black text-[#2D4A7C] mb-6">
                     Our Vision
                   </h3>
                   
-                  <div className="h-1 w-16 bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] rounded-full mb-6"></div>
+                  <div className="h-1 w-16 bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] rounded-full mb-6"></div>
                   
                   <p className="text-lg text-gray-700 leading-relaxed">
                     To see every vulnerable child in our care restored with dignity, nurtured in love, strengthened in faith, and equipped with education and life skills to become responsible citizens and shining lights in society.
@@ -334,21 +334,21 @@ const Bangalore = () => {
                 whileHover={{ y: -10 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#C0A58B]/20 h-full">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                <div className="relative bg-white p-10 rounded-3xl shadow-xl border border-[#C9A96A]/20 h-full">
                   <motion.div
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className="bg-gradient-to-br from-[#C0A58B] to-[#D4BFA3] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
+                    className="bg-gradient-to-br from-[#C9A96A] to-[#D4B77D] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
                   >
                     <Target className="h-10 w-10 text-white" />
                   </motion.div>
                   
-                  <h3 className="text-4xl font-heading font-black text-[#C0A58B] mb-6">
+                  <h3 className="text-4xl font-heading font-black text-[#C9A96A] mb-6">
                     Our Mission
                   </h3>
                   
-                  <div className="h-1 w-16 bg-gradient-to-r from-[#678E76] to-[#8BAA92] rounded-full mb-6"></div>
+                  <div className="h-1 w-16 bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] rounded-full mb-6"></div>
                   
                   <ul className="space-y-4">
                     {missionPoints.map((point, index) => (
@@ -360,7 +360,7 @@ const Bangalore = () => {
                         transition={{ delay: 0.4 + index * 0.1 }}
                         className="flex items-start space-x-3"
                       >
-                        <div className="bg-gradient-to-br from-[#C0A58B] to-[#D4BFA3] rounded-full p-1.5 mt-1 flex-shrink-0">
+                        <div className="bg-gradient-to-br from-[#C9A96A] to-[#D4B77D] rounded-full p-1.5 mt-1 flex-shrink-0">
                           <div className="h-2 w-2"></div>
                         </div>
                         <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -375,7 +375,7 @@ const Bangalore = () => {
       </section>
 
       {/* What Makes Us Unique */}
-      <section className="py-32 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#8BAA92] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#3D5A8C] relative overflow-hidden">
        <div className="absolute inset-0 bg-[linear-gradient(45deg,_rgba(255,255,255,0.05)_25%,_transparent_25%,_transparent_75%,_rgba(255,255,255,0.05)_75%,_rgba(255,255,255,0.05))] [background-size:20px_20px] opacity-30"></div>
 
         
@@ -407,7 +407,7 @@ const Bangalore = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#C0A58B] to-white mx-auto rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#C9A96A] to-white mx-auto rounded-full"
               />
             </motion.div>
 
@@ -436,7 +436,7 @@ const Bangalore = () => {
                       {feature.title}
                     </h3>
                     
-                    <div className="h-1 w-12 bg-gradient-to-r from-[#C0A58B] to-white rounded-full mb-4"></div>
+                    <div className="h-1 w-12 bg-gradient-to-r from-[#C9A96A] to-white rounded-full mb-4"></div>
                     
                     <p className="text-white/90 leading-relaxed">
                       {feature.description}
@@ -450,7 +450,7 @@ const Bangalore = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-32 bg-gradient-to-r from-[#C0A58B] via-[#D4BFA3] to-[#C0A58B] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-r from-[#C9A96A] via-[#D4B77D] to-[#C9A96A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         
@@ -481,7 +481,7 @@ const Bangalore = () => {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
+              className="group bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
             >
               Support Our Mission
               <motion.div

@@ -24,25 +24,25 @@ const Ambur = () => {
       icon: Utensils,
       title: "Nutritious Food",
       description: "Overcoming malnutrition with daily meals",
-      color: "from-[#678E76] to-[#557366]",
+      color: "from-[#1E3A5F] to-[#2D4A7C]",
     },
     {
       icon: Stethoscope,
       title: "Medical Care",
       description: "Protection from preventable illnesses",
-      color: "from-[#8BAA92] to-[#678E76]",
+      color: "from-[#2D4A7C] to-[#3D5A8C]",
     },
     {
       icon: Book,
       title: "Education Support",
       description: "Breaking the cycle of illiteracy",
-      color: "from-[#C0A58B] to-[#A88D73]",
+      color: "from-[#C9A96A] to-[#D4B77D]",
     },
     {
       icon: Heart,
       title: "Moral Guidance",
       description: "Shaping values and future",
-      color: "from-[#D4BFA3] to-[#C0A58B]",
+      color: "from-[#D4B77D] to-[#DFC690]",
     },
   ];
 
@@ -78,7 +78,7 @@ const Ambur = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5]">
+    <div className="min-h-screen bg-[#F8F9FA]">
       <Navbar />
 
       {/* Animated Background Orbs */}
@@ -89,7 +89,7 @@ const Ambur = () => {
             y: mousePosition.y / 50,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute -top-40 -left-40 w-96 h-96 bg-[#678E76]/20 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-96 h-96 bg-[#1E3A5F]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -97,7 +97,7 @@ const Ambur = () => {
             y: -mousePosition.y / 40,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C0A58B]/20 rounded-full blur-3xl"
+          className="absolute top-1/3 -right-40 w-96 h-96 bg-[#C9A96A]/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -105,13 +105,13 @@ const Ambur = () => {
             y: -mousePosition.y / 60,
           }}
           transition={{ type: "spring", damping: 30 }}
-          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#8BAA92]/20 rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#2D4A7C]/20 rounded-full blur-3xl"
         />
       </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#C0A58B]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#C9A96A]">
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-0 left-0 w-full h-full" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -136,9 +136,9 @@ const Ambur = () => {
               >
                 <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/40">
                   <span className="text-white font-semibold flex items-center gap-2">
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-[#C9A96A]" fill="currentColor" />
                     Established 2011
-                    <Star className="h-5 w-5 text-[#C0A58B]" fill="currentColor" />
+                    <Star className="h-5 w-5 text-[#C9A96A]" fill="currentColor" />
                   </span>
                 </div>
               </motion.div>
@@ -157,7 +157,7 @@ const Ambur = () => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="inline-block bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] bg-clip-text text-transparent"
                 >
                   Centre
                 </motion.span>
@@ -167,7 +167,7 @@ const Ambur = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="h-2 w-48 bg-gradient-to-r from-[#C0A58B] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-48 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-8 rounded-full"
               />
               
               <motion.p
@@ -225,12 +225,12 @@ const Ambur = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
+                  className="inline-block bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6"
                 >
                   THE CHALLENGE
                 </motion.div>
                 
-                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
+                <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
                   The Region We Served
                 </h2>
                 
@@ -239,7 +239,7 @@ const Ambur = () => {
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
-                  className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto rounded-full"
+                  className="h-2 w-32 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto rounded-full"
                 />
               </div>
               
@@ -250,13 +250,13 @@ const Ambur = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative mb-16"
               >
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#678E76]/10">
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#1E3A5F]/20 to-[#C9A96A]/20 rounded-3xl blur-2xl" />
+                <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#1E3A5F]/10">
                   <p className="text-2xl text-gray-700 leading-relaxed mb-8">
                     The New Hope Children Community Centre in{" "}
                     <motion.span
                       whileHover={{ scale: 1.1 }}
-                      className="inline-block font-black text-3xl bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent cursor-default"
+                      className="inline-block font-black text-3xl bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent cursor-default"
                     >
                       Ambur, Tamil Nadu
                     </motion.span>
@@ -265,9 +265,9 @@ const Ambur = () => {
                   <p className="text-2xl text-gray-700 leading-relaxed mb-8">
                     This region struggles with{" "}
                     <span className="font-bold text-red-600">undrinkable and polluted groundwater</span>, 
-                    leading to widespread health issues such as <span className="font-bold text-[#678E76]">bronchitis and tuberculosis</span>.
+                    leading to widespread health issues such as <span className="font-bold text-[#1E3A5F]">bronchitis and tuberculosis</span>.
                   </p>
-                  <div className="relative bg-gradient-to-br from-[#678E76]/10 to-[#8BAA92]/10 p-8 rounded-2xl border-l-4 border-[#678E76]">
+                  <div className="relative bg-gradient-to-br from-[#1E3A5F]/10 to-[#2D4A7C]/10 p-8 rounded-2xl border-l-4 border-[#1E3A5F]">
                     <p className="text-2xl text-gray-800 leading-relaxed font-semibold">
                       Families often face poverty, ill health, and lack of opportunities, leaving{" "}
                       <motion.span
@@ -275,7 +275,7 @@ const Ambur = () => {
                         whileInView={{ scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", delay: 0.3 }}
-                        className="inline-block font-black text-4xl bg-gradient-to-r from-[#C0A58B] to-[#D4BFA3] bg-clip-text text-transparent"
+                        className="inline-block font-black text-4xl bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] bg-clip-text text-transparent"
                       >
                         children vulnerable and neglected
                       </motion.span>
@@ -290,10 +290,10 @@ const Ambur = () => {
       </section>
 
       {/* Our Response Section */}
-      <section className="py-32 bg-gradient-to-b from-[#FAF8F5] to-white relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-[#F8F9FA] to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #678E76 1px, transparent 1px), linear-gradient(to bottom, #678E76 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, #1E3A5F 1px, transparent 1px), linear-gradient(to bottom, #1E3A5F 1px, transparent 1px)`,
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
@@ -312,12 +312,12 @@ const Ambur = () => {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-block bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
+                className="inline-block bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
               >
                 OUR RESPONSE
               </motion.div>
               
-              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent mb-6">
+              <h2 className="text-6xl md:text-7xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
                 A Bold Step of Compassion
               </h2>
               
@@ -326,7 +326,7 @@ const Ambur = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#678E76] to-[#C0A58B] mx-auto mb-8 rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto mb-8 rounded-full"
               />
               
               <motion.div
@@ -336,11 +336,11 @@ const Ambur = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#678E76]/20 to-[#C0A58B]/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-gradient-to-br from-white to-[#FAF8F5] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#678E76]/10">
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#1E3A5F]/20 to-[#C9A96A]/20 rounded-3xl blur-2xl" />
+                <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] p-12 md:p-16 rounded-3xl shadow-2xl border border-[#1E3A5F]/10">
                   <p className="text-3xl text-gray-700 leading-relaxed font-semibold">
-                    In the year <span className="font-black text-4xl text-[#8BAA92]">2011</span>, in spite of limited resources,{" "}
-                    <span className="font-bold bg-gradient-to-r from-[#678E76] to-[#8BAA92] bg-clip-text text-transparent">
+                    In the year <span className="font-black text-4xl text-[#2D4A7C]">2011</span>, in spite of limited resources,{" "}
+                    <span className="font-bold bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent">
                       Helping Hands India took a bold step of compassion
                     </span>{" "}
                     by establishing a Community Transformation Centre in Ambur.
@@ -361,17 +361,17 @@ const Ambur = () => {
                   whileHover={{ y: -15, scale: 1.05 }}
                   className="group relative"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-[#678E76]/30 to-[#C0A58B]/30 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                  <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-[#678E76]/20 hover:shadow-2xl transition-all duration-500 h-full">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-[#1E3A5F]/30 to-[#C9A96A]/30 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-[#1E3A5F]/20 hover:shadow-2xl transition-all duration-500 h-full">
                     <motion.div
                       animate={{ rotate: [0, -10, 10, -10, 0] }}
                       transition={{ duration: 2, repeat: Infinity, delay: index * 0.2 }}
                       className="mb-6"
                     >
-                      <provision.icon className="h-16 w-16 text-[#678E76] mx-auto" />
+                      <provision.icon className="h-16 w-16 text-[#1E3A5F] mx-auto" />
                     </motion.div>
                     
-                    <h3 className="text-2xl font-heading font-bold text-[#678E76] mb-4">
+                    <h3 className="text-2xl font-heading font-bold text-[#1E3A5F] mb-4">
                       {provision.title}
                     </h3>
                     
@@ -398,11 +398,11 @@ const Ambur = () => {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="inline-block mb-6"
               >
-                <Sparkles className="h-16 w-16 text-[#C0A58B]" />
+                <Sparkles className="h-16 w-16 text-[#C9A96A]" />
               </motion.div>
               <p className="text-3xl text-gray-700 leading-relaxed max-w-4xl mx-auto font-semibold">
                 The Ambur Community Centre stands as a testimony of hope—showing that even in places of scarcity,{" "}
-                <span className="font-bold bg-gradient-to-r from-[#678E76] to-[#C0A58B] bg-clip-text text-transparent">
+                <span className="font-bold bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] bg-clip-text text-transparent">
                   love and commitment can transform lives and communities
                 </span>
                 .
@@ -413,7 +413,7 @@ const Ambur = () => {
       </section>
 
       {/* Success Story Section */}
-      <section className="py-32 bg-gradient-to-br from-[#678E76] via-[#7A9B82] to-[#8BAA92] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#3D5A8C] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E")`
@@ -448,7 +448,7 @@ const Ambur = () => {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="h-2 w-32 bg-gradient-to-r from-[#C0A58B] to-white mx-auto mb-8 rounded-full"
+                className="h-2 w-32 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-8 rounded-full"
               />
               
               <motion.div
@@ -460,10 +460,10 @@ const Ambur = () => {
               >
                 <div className="absolute -inset-4 bg-white/20 rounded-3xl blur-2xl" />
                 <div className="relative bg-white/10 backdrop-blur-xl p-12 md:p-16 rounded-3xl border border-white/30">
-                  <Trophy className="h-20 w-20 text-[#C0A58B] mx-auto mb-8" />
+                  <Trophy className="h-20 w-20 text-[#C9A96A] mx-auto mb-8" />
                   <p className="text-3xl text-white leading-relaxed mb-8">
                     After years of care and support, the Ambur Centre was successfully closed—not because of failure, but because{" "}
-                    <span className="font-bold text-[#C0A58B]">it had fulfilled its mission</span>.
+                    <span className="font-bold text-[#C9A96A]">it had fulfilled its mission</span>.
                   </p>
                   <p className="text-4xl font-heading font-bold text-white">
                     Every child who entered the Centre has now completed their education and stepped into society with dignity and independence.
@@ -490,7 +490,7 @@ const Ambur = () => {
                       <motion.div
                         whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                         transition={{ duration: 0.5 }}
-                        className="bg-gradient-to-br from-[#C0A58B] to-[#D4BFA3] w-16 h-16 rounded-2xl flex items-center justify-center shadow-xl"
+                        className="bg-gradient-to-br from-[#C9A96A] to-[#D4B77D] w-16 h-16 rounded-2xl flex items-center justify-center shadow-xl"
                       >
                         <story.icon className="h-8 w-8 text-white" />
                       </motion.div>
@@ -513,7 +513,7 @@ const Ambur = () => {
                       {story.title}
                     </h3>
                     
-                    <div className="h-1 w-12 bg-gradient-to-r from-[#C0A58B] to-white rounded-full mb-4"></div>
+                    <div className="h-1 w-12 bg-gradient-to-r from-[#C9A96A] to-white rounded-full mb-4"></div>
                     
                     <p className="text-white/90 leading-relaxed">
                       {story.description}
@@ -538,7 +538,7 @@ const Ambur = () => {
                 <motion.div
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="inline-flex items-center gap-3 text-[#C0A58B] font-bold text-xl"
+                  className="inline-flex items-center gap-3 text-[#C9A96A] font-bold text-xl"
                 >
                   <Award className="h-8 w-8" />
                   From vulnerability to victory
@@ -551,7 +551,7 @@ const Ambur = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-32 bg-gradient-to-r from-[#C0A58B] via-[#D4BFA3] to-[#C0A58B] relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-r from-[#C9A96A] via-[#D4B77D] to-[#C9A96A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         
@@ -582,7 +582,7 @@ const Ambur = () => {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-[#678E76] to-[#8BAA92] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
+              className="group bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
             >
               Support Our Mission
               <motion.div

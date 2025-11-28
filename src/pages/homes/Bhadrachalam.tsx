@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ImageGallery } from "@/components/ImageGallery";
-import { Home, Heart, Target, Users, Sparkles, ArrowRight, Star, TrendingUp, Award, GraduationCap, Shield } from "lucide-react";
+import { Heart, Sparkles, ArrowRight, Star, TrendingUp, Award, GraduationCap, Shield } from "lucide-react";
 
 const Bhadrachalam = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -118,7 +118,7 @@ const Bhadrachalam = () => {
             }}></div>
           </div>
         </div>
-        
+
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.div
             style={{ opacity, scale }}
@@ -142,7 +142,7 @@ const Bhadrachalam = () => {
                   </span>
                 </div>
               </motion.div>
-              
+
               <h1 className="text-5xl md:text-7xl font-heading font-black text-white mb-4 tracking-tight leading-none">
                 <motion.span
                   initial={{ opacity: 0, x: -100 }}
@@ -162,14 +162,14 @@ const Bhadrachalam = () => {
                   Tribal Children's Home
                 </motion.span>
               </h1>
-              
+
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
                 className="h-1 w-32 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-6 rounded-full"
               />
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -178,7 +178,7 @@ const Bhadrachalam = () => {
               >
                 Bhadrachalam
               </motion.p>
-              
+
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -229,11 +229,11 @@ const Bhadrachalam = () => {
                 >
                   THE BEGINNING
                 </motion.div>
-                
+
                 <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-4">
                   A Heart-Breaking Discovery
                 </h2>
-                
+
                 <motion.div
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
@@ -242,7 +242,7 @@ const Bhadrachalam = () => {
                   className="h-1 w-24 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto rounded-full"
                 />
               </div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -253,31 +253,14 @@ const Bhadrachalam = () => {
                 <div className="absolute -inset-3 bg-gradient-to-r from-[#1E3A5F]/20 to-[#C9A96A]/20 rounded-2xl blur-xl" />
                 <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] p-8 md:p-12 rounded-2xl shadow-xl border border-[#1E3A5F]/10">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    When Executive Director <span className="font-bold text-[#1E3A5F]">George Fernandes</span> first visited the remote tribal villages of{" "}
-                    <motion.span
-                      whileHover={{ scale: 1.05 }}
-                      className="inline-block font-black text-xl bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent cursor-default"
-                    >
-                      Bhadrachalam
-                    </motion.span>{" "}
-                    in <span className="font-bold text-[#2D4A7C]">2010</span>, his heart was broken by the sight before him.
+                    When Executive Director <span className="font-bold text-[#1E3A5F]">George Fernandes</span> first visited the remote tribal villages of Bhadrachalam in <span className="font-bold text-[#2D4A7C]">2010</span>, his heart was broken by the sight before him.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     Small children were sitting on the ground, <span className="font-bold text-red-600">eating mud to fill their empty stomachs</span>, leading to swollen bellies, disease, and hopelessness.
                   </p>
                   <div className="relative bg-gradient-to-br from-[#1E3A5F]/10 to-[#2D4A7C]/10 p-6 rounded-xl border-l-4 border-[#1E3A5F]">
                     <p className="text-lg text-gray-800 leading-relaxed font-semibold">
-                      Compelled by compassion, George made a bold decision—he purchased a piece of land and established a Children's Home for{" "}
-                      <motion.span
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ type: "spring", delay: 0.3 }}
-                        className="inline-block font-black text-2xl bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] bg-clip-text text-transparent"
-                      >
-                        40 tribal children
-                      </motion.span>
-                      .
+                      Compelled by compassion, George made a bold decision. He purchased a piece of land and established a Children’s Home for <span className="font-bold text-[#C9A96A]">40 tribal children</span>.
                     </p>
                   </div>
                 </div>
@@ -295,7 +278,7 @@ const Bhadrachalam = () => {
             backgroundSize: '4rem 4rem'
           }}></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -314,11 +297,11 @@ const Bhadrachalam = () => {
               >
                 TODAY'S REALITY
               </motion.div>
-              
+
               <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-4">
                 Testimonies of Love & Provision
               </h2>
-              
+
               <motion.div
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
@@ -326,7 +309,7 @@ const Bhadrachalam = () => {
                 transition={{ duration: 0.8 }}
                 className="h-1 w-24 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto mb-6 rounded-full"
               />
-              
+
               <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
                 Today, these children, once deprived of food, clothing, and shelter, are{" "}
                 <span className="font-bold bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent">
@@ -337,7 +320,32 @@ const Bhadrachalam = () => {
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {provisions.map((provision, index) => (
+              {[
+                {
+                  icon: "🍽️",
+                  title: "Three Nutritious Meals",
+                  description: "Every day, no child goes hungry anymore",
+                  color: "from-[#1E3A5F] to-[#2D4A7C]",
+                },
+                {
+                  icon: "🏠",
+                  title: "Safe Shelter & Care",
+                  description: "A home filled with warmth and security",
+                  color: "from-[#2D4A7C] to-[#3D5A8C]",
+                },
+                {
+                  icon: "📚",
+                  title: "Access to Education",
+                  description: "Opening doors to a brighter future",
+                  color: "from-[#C9A96A] to-[#D4B77D]",
+                },
+                {
+                  icon: "💝",
+                  title: "Moral Nurturing",
+                  description: "Building character and values for life",
+                  color: "from-[#D4B77D] to-[#DFC690]",
+                },
+              ].map((provision, index) => (
                 <motion.div
                   key={provision.title}
                   initial={{ opacity: 0, y: 50, rotateY: -30 }}
@@ -356,13 +364,13 @@ const Bhadrachalam = () => {
                     >
                       {provision.icon}
                     </motion.div>
-                    
+
                     <h3 className="text-xl font-heading font-bold text-[#1E3A5F] mb-3">
                       {provision.title}
                     </h3>
-                    
+
                     <div className={`h-1 w-10 bg-gradient-to-r ${provision.color} rounded-full mb-3`}></div>
-                    
+
                     <p className="text-gray-700 leading-relaxed text-sm">
                       {provision.description}
                     </p>
@@ -374,14 +382,14 @@ const Bhadrachalam = () => {
         </div>
       </section>
 
-      {/* Transformation Story */}
+      {/* Achievements in 15 Years */}
       <section className="py-24 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#3D5A8C] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E")`
           }}></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -400,11 +408,11 @@ const Bhadrachalam = () => {
               >
                 THE TRANSFORMATION
               </motion.div>
-              
+
               <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-4">
-                From Despair to Hope
+                Achievements in 15 Years
               </h2>
-              
+
               <motion.div
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
@@ -412,14 +420,45 @@ const Bhadrachalam = () => {
                 transition={{ duration: 0.8 }}
                 className="h-1 w-24 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-6 rounded-full"
               />
-              
+
               <p className="text-lg text-white/90 max-w-4xl mx-auto leading-relaxed">
-                What once was a place of despair has now become a <span className="font-bold">home of hope</span> where children are not only surviving but <span className="font-bold">thriving with dignity and a brighter future</span>.
+                Over the past 15 years, the Bhadrachalam Tribal Children’s Home has witnessed remarkable transformation in the lives of its children.
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {transformations.map((transformation, index) => (
+              {[
+                {
+                  icon: Heart,
+                  title: "Healthy Growth",
+                  description: "Children who once suffered from hunger and sickness are now growing up strong and healthy.",
+                },
+                {
+                  icon: Shield,
+                  title: "Restored Dignity",
+                  description: "They have overcome the fear of low self-worth and are now walking with dignity and confidence.",
+                },
+                {
+                  icon: GraduationCap,
+                  title: "Education in English Medium",
+                  description: "Learning in English-medium schools has greatly boosted their confidence and communication skills.",
+                },
+                {
+                  icon: Award,
+                  title: "Government Recognition",
+                  description: "The Home and its children have been recognised by government departments for their progress and resilience.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Higher Education Opportunities",
+                  description: "A few children have received government sponsorships to pursue teacher training courses.",
+                },
+                {
+                  icon: Star,
+                  title: "Sports Excellence",
+                  description: "Some children have proudly represented at the state level in games like Kho-Kho and Kabaddi.",
+                }
+              ].map((transformation, index) => (
                 <motion.div
                   key={transformation.title}
                   initial={{ opacity: 0, y: 50 }}
@@ -431,38 +470,24 @@ const Bhadrachalam = () => {
                 >
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-white/40 to-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                   <div className="relative bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/30 hover:bg-white/20 transition-all duration-500 h-full">
-                    <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-start gap-4 mb-4">
                       <motion.div
                         whileHover={{ rotate: [0, -8, 8, -8, 0], scale: 1.05 }}
                         transition={{ duration: 0.5 }}
-                        className="bg-gradient-to-br from-[#C9A96A] to-[#D4B77D] w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
+                        className="bg-gradient-to-br from-[#C9A96A] to-[#D4B77D] w-12 h-12 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0"
                       >
                         <transformation.icon className="h-6 w-6 text-white" />
                       </motion.div>
-                      
-                      <div className="text-right">
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          whileInView={{ scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ type: "spring", delay: 0.3 + index * 0.1 }}
-                          className="text-2xl font-black text-white"
-                        >
-                          {transformation.stat}
-                        </motion.div>
-                        <div className="text-white/70 text-xs font-semibold">{transformation.statLabel}</div>
+
+                      <div>
+                        <h3 className="text-xl font-heading font-bold text-white mb-2">
+                          {transformation.title}
+                        </h3>
+                        <p className="text-white/90 leading-relaxed text-sm">
+                          {transformation.description}
+                        </p>
                       </div>
                     </div>
-                    
-                    <h3 className="text-xl font-heading font-bold text-white mb-3">
-                      {transformation.title}
-                    </h3>
-                    
-                    <div className="h-1 w-10 bg-gradient-to-r from-[#C9A96A] to-white rounded-full mb-3"></div>
-                    
-                    <p className="text-white/90 leading-relaxed text-sm">
-                      {transformation.description}
-                    </p>
                   </div>
                 </motion.div>
               ))}
@@ -485,15 +510,13 @@ const Bhadrachalam = () => {
                 >
                   <Sparkles className="h-12 w-12 text-[#C9A96A]" />
                 </motion.div>
-                
+
                 <h3 className="text-2xl md:text-3xl font-heading font-black text-white mb-4">
-                  Restoring Dignity, Opening Doors
+                  Living Testimonies
                 </h3>
-                
+
                 <p className="text-lg text-white/90 leading-relaxed max-w-4xl mx-auto">
-                  The Children's Home is not only providing food and shelter but also{" "}
-                  <span className="font-bold text-[#C9A96A]">restoring dignity</span> and{" "}
-                  <span className="font-bold text-[#C9A96A]">opening the doors of education</span>. These children, once forgotten, are now being elevated to stand with confidence and compete in today's society—even among the elite.
+                  From children who once had no food, clothing, or hope, today they stand as <span className="font-bold text-[#C9A96A]">living testimonies of transformation</span>, ready to contribute positively to society.
                 </p>
               </div>
             </motion.div>
@@ -505,7 +528,7 @@ const Bhadrachalam = () => {
       <section className="py-24 bg-gradient-to-r from-[#C9A96A] via-[#D4B77D] to-[#C9A96A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -521,15 +544,15 @@ const Bhadrachalam = () => {
             >
               <Heart className="h-16 w-16 text-white" fill="currentColor" />
             </motion.div>
-            
+
             <h2 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
               Be Part of Their Journey
             </h2>
-            
+
             <p className="text-lg text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
               From eating mud to achieving dreams. Every child deserves a chance to thrive. Help us continue this transformation.
             </p>
-            
+
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
               whileTap={{ scale: 0.95 }}
@@ -543,7 +566,7 @@ const Bhadrachalam = () => {
                 <ArrowRight className="h-5 w-5" />
               </motion.div>
             </motion.button>
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

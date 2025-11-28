@@ -29,6 +29,7 @@ const Navbar = () => {
         { name: "Bhadrachalam", path: "/homes/bhadrachalam" },
         { name: "Raibag", path: "/homes/raibag" },
         { name: "Ambur", path: "/homes/ambur" },
+        { name: "Jeevanahalli", path: "/homes/jeevanahalli" },
       ],
     },
     {
@@ -83,11 +84,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-white backdrop-blur-md shadow-lg"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -104,9 +104,8 @@ const Navbar = () => {
                 className="h-8 w-8 object-contain"
               />
             </motion.div>
-            <div className={`text-lg font-heading font-bold transition-colors ${
-              isScrolled ? "text-slate-800 group-hover:text-gold" : "text-white group-hover:text-gold"
-            }`}>
+            <div className={`text-lg font-heading font-bold transition-colors ${isScrolled ? "text-slate-800 group-hover:text-gold" : "text-white group-hover:text-gold"
+              }`}>
               EverSpring International
             </div>
           </Link>
@@ -124,20 +123,18 @@ const Navbar = () => {
                   <div className="flex items-center space-x-1">
                     <Link
                       to={link.path}
-                      className={`hover:text-gold transition-colors font-medium ${
-                        location.pathname === link.path 
-                          ? "text-gold" 
+                      className={`hover:text-gold transition-colors font-medium ${location.pathname === link.path
+                          ? "text-gold"
                           : isScrolled ? "text-slate-700" : "text-white"
-                      }`}
+                        }`}
                       onClick={(e) => handleDropdownClick(e, link.name)}
                     >
                       {link.name}
                     </Link>
                     <button
                       onClick={(e) => handleDropdownButtonClick(e, link.name)}
-                      className={`hover:text-gold transition-colors ${
-                        isScrolled ? "text-slate-700" : "text-white"
-                      }`}
+                      className={`hover:text-gold transition-colors ${isScrolled ? "text-slate-700" : "text-white"
+                        }`}
                     >
                       <ChevronDown className="h-4 w-4" />
                     </button>
@@ -168,11 +165,10 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`hover:text-gold transition-colors font-medium ${
-                    location.pathname === link.path 
-                      ? "text-gold" 
+                  className={`hover:text-gold transition-colors font-medium ${location.pathname === link.path
+                      ? "text-gold"
                       : isScrolled ? "text-slate-700" : "text-white"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -187,9 +183,8 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden transition-colors ${
-              isScrolled ? "text-slate-700" : "text-white"
-            }`}
+            className={`lg:hidden transition-colors ${isScrolled ? "text-slate-700" : "text-white"
+              }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -221,9 +216,8 @@ const Navbar = () => {
                         className="px-4 py-3 text-slate-700 hover:text-gold transition-colors"
                       >
                         <ChevronDown
-                          className={`h-4 w-4 transition-transform ${
-                            openDropdown === link.name ? "rotate-180" : ""
-                          }`}
+                          className={`h-4 w-4 transition-transform ${openDropdown === link.name ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
                     </div>

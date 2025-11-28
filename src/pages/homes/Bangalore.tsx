@@ -100,7 +100,7 @@ const Bangalore = () => {
             }}></div>
           </div>
         </div>
-        
+
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.div
             style={{ opacity, scale }}
@@ -124,7 +124,7 @@ const Bangalore = () => {
                   </span>
                 </div>
               </motion.div>
-              
+
               <h1 className="text-7xl md:text-9xl font-heading font-black text-white mb-6 tracking-tight leading-none">
                 <motion.span
                   initial={{ opacity: 0, x: -100 }}
@@ -144,14 +144,14 @@ const Bangalore = () => {
                   Children Home
                 </motion.span>
               </h1>
-              
+
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
                 className="h-2 w-48 bg-gradient-to-r from-[#C9A96A] to-white mx-auto mb-8 rounded-full"
               />
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -160,7 +160,7 @@ const Bangalore = () => {
               >
                 Bengaluru
               </motion.p>
-              
+
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -192,7 +192,7 @@ const Bangalore = () => {
       </section>
 
       {/* Who We Are */}
-     <section className="py-32 bg-white relative z-10">
+      <section className="py-32 bg-white relative z-10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -211,11 +211,11 @@ const Bangalore = () => {
                 >
                   OUR STORY
                 </motion.div>
-                
+
                 <h2 className="text-4xl md:text-5xl font-heading font-black bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] bg-clip-text text-transparent mb-6">
                   Who We Are
                 </h2>
-                
+
                 <motion.div
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
@@ -224,7 +224,7 @@ const Bangalore = () => {
                   className="h-2 w-32 bg-gradient-to-r from-[#1E3A5F] to-[#C9A96A] mx-auto rounded-full"
                 />
               </div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -259,7 +259,7 @@ const Bangalore = () => {
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E3A5F_1px,transparent_1px),linear-gradient(to_bottom,#1E3A5F_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-10">
@@ -281,15 +281,15 @@ const Bangalore = () => {
                   >
                     <Home className="h-10 w-10 text-white" />
                   </motion.div>
-                  
+
                   <h3 className="text-4xl font-heading font-black text-[#1E3A5F] mb-6">
                     Our Journey
                   </h3>
-                  
+
                   <div className="h-1 w-16 bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] rounded-full mb-6"></div>
-                  
+
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    The Home began on <span className="font-bold text-[#1E3A5F]">23rd December 2001</span> in a modest way with just 10 children. By God's grace and through committed service, what began as a small initiative has now become a family of hope, care, and transformation.
+                    George Fernandes lost his father at an early age, and the struggles he endured ignited a deep burden in his heart for children like him. Moved by compassion, on <span className="font-bold text-[#1E3A5F]">23rd December 2001</span>, New Hope Children Home was birthed with 10 vulnerable children. What began as a small step of faith has now become a family of hope, care, and transformation for hundreds of children.
                   </p>
                 </div>
               </motion.div>
@@ -312,13 +312,13 @@ const Bangalore = () => {
                   >
                     <Heart className="h-10 w-10 text-white" />
                   </motion.div>
-                  
+
                   <h3 className="text-4xl font-heading font-black text-[#2D4A7C] mb-6">
                     Our Vision
                   </h3>
-                  
+
                   <div className="h-1 w-16 bg-gradient-to-r from-[#C9A96A] to-[#D4B77D] rounded-full mb-6"></div>
-                  
+
                   <p className="text-lg text-gray-700 leading-relaxed">
                     To see every vulnerable child in our care restored with dignity, nurtured in love, strengthened in faith, and equipped with education and life skills to become responsible citizens and shining lights in society.
                   </p>
@@ -343,15 +343,20 @@ const Bangalore = () => {
                   >
                     <Target className="h-10 w-10 text-white" />
                   </motion.div>
-                  
+
                   <h3 className="text-4xl font-heading font-black text-[#C9A96A] mb-6">
                     Our Mission
                   </h3>
-                  
+
                   <div className="h-1 w-16 bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] rounded-full mb-6"></div>
-                  
+
                   <ul className="space-y-4">
-                    {missionPoints.map((point, index) => (
+                    {[
+                      "To provide holistic care—physical, emotional, spiritual, and educational.",
+                      "To nurture children in a family-like atmosphere where they are loved and valued.",
+                      "To ensure access to quality education through reputed English-medium schools in Bengaluru.",
+                      "To build resilience and self-confidence so that every child can break the cycle of poverty and hopelessness."
+                    ].map((point, index) => (
                       <motion.li
                         key={index}
                         initial={{ opacity: 0, x: -20 }}
@@ -376,9 +381,9 @@ const Bangalore = () => {
 
       {/* What Makes Us Unique */}
       <section className="py-32 bg-gradient-to-br from-[#1E3A5F] via-[#2D4A7C] to-[#3D5A8C] relative overflow-hidden">
-       <div className="absolute inset-0 bg-[linear-gradient(45deg,_rgba(255,255,255,0.05)_25%,_transparent_25%,_transparent_75%,_rgba(255,255,255,0.05)_75%,_rgba(255,255,255,0.05))] [background-size:20px_20px] opacity-30"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,_rgba(255,255,255,0.05)_25%,_transparent_25%,_transparent_75%,_rgba(255,255,255,0.05)_75%,_rgba(255,255,255,0.05))] [background-size:20px_20px] opacity-30"></div>
 
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -397,11 +402,11 @@ const Bangalore = () => {
               >
                 OUR UNIQUENESS
               </motion.div>
-              
+
               <h2 className="text-6xl md:text-7xl font-heading font-black text-white mb-6">
                 What Makes Us Unique
               </h2>
-              
+
               <motion.div
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
@@ -412,7 +417,38 @@ const Bangalore = () => {
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {uniqueFeatures.map((feature, index) => (
+              {[
+                {
+                  icon: Users,
+                  title: "Family Atmosphere",
+                  description: "Children grow up not in an institution, but in a home filled with love, acceptance, and belonging.",
+                  color: "from-[#1E3A5F] to-[#2D4A7C]",
+                },
+                {
+                  icon: GraduationCap,
+                  title: "Quality Education",
+                  description: "All children attend reputed English-medium schools in Bengaluru, giving them a strong foundation for their future.",
+                  color: "from-[#C9A96A] to-[#D4B77D]",
+                },
+                {
+                  icon: Shield,
+                  title: "Healthcare & Wellbeing",
+                  description: "Special care is given to HIV-affected and physically weak children, ensuring health and dignity.",
+                  color: "from-[#2D4A7C] to-[#3D5A8C]",
+                },
+                {
+                  icon: Heart,
+                  title: "Faith & Values",
+                  description: "Children are nurtured with strong moral and spiritual values that shape their character.",
+                  color: "from-[#D4B77D] to-[#DFC690]",
+                },
+                {
+                  icon: Sparkles,
+                  title: "Future Empowerment",
+                  description: "Beyond academics, children are encouraged to develop skills, talents, and leadership qualities.",
+                  color: "from-[#1E3A5F] to-[#2D4A7C]",
+                },
+              ].map((feature, index) => (
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, y: 50, rotateY: -30 }}
@@ -431,13 +467,13 @@ const Bangalore = () => {
                     >
                       <feature.icon className="h-8 w-8 text-white" />
                     </motion.div>
-                    
+
                     <h3 className="text-2xl font-heading font-bold text-white mb-4">
                       {feature.title}
                     </h3>
-                    
+
                     <div className="h-1 w-12 bg-gradient-to-r from-[#C9A96A] to-white rounded-full mb-4"></div>
-                    
+
                     <p className="text-white/90 leading-relaxed">
                       {feature.description}
                     </p>
@@ -449,11 +485,11 @@ const Bangalore = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Action & Impact */}
       <section className="py-32 bg-gradient-to-r from-[#C9A96A] via-[#D4B77D] to-[#C9A96A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -469,40 +505,25 @@ const Bangalore = () => {
             >
               <Heart className="h-20 w-20 text-white" fill="currentColor" />
             </motion.div>
-            
+
             <h2 className="text-5xl md:text-7xl font-heading font-black text-white mb-8 leading-tight">
-              Join Us in Transforming Lives
+              25 Years of Transformation
             </h2>
-            
+
             <p className="text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Every child deserves a chance to dream, grow, and shine. Be part of their journey towards a brighter future.
+              Over the past 25 years, New Hope Children Home has nurtured and empowered children to rise above their broken past and build a future of dignity, hope, and success.
             </p>
-            
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-[#1E3A5F] to-[#2D4A7C] text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl transition-all duration-300 inline-flex items-center gap-3 border-4 border-white/30"
-            >
-              Support Our Mission
-              <motion.div
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                <ArrowRight className="h-6 w-6" />
-              </motion.div>
-            </motion.button>
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto"
+              className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
             >
               {[
-                { number: "40+", label: "Children" },
-                { number: "23", label: "Years" },
-                { number: "180+", label: "Lives Transformed" },
+                { number: "180", label: "Children Transformed & Reintegrated" },
+                { number: "11", label: "Girls Happily Married & Settled" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -521,10 +542,31 @@ const Bangalore = () => {
                   >
                     {stat.number}
                   </motion.div>
-                  <div className="text-white/80 font-semibold">{stat.label}</div>
+                  <div className="text-white/90 font-semibold text-lg">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>
+
+            <div className="mt-16 text-white/90 text-lg">
+              <p className="mb-6 font-bold text-2xl">Many of our children have stepped into society as professionals, entrepreneurs, and leaders:</p>
+              <ul className="grid md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
+                {[
+                  "School teachers shaping future generations",
+                  "Nurses and medical record personnel in reputed hospitals",
+                  "Managers and supervisors in the IT sector",
+                  "Real estate managers",
+                  "Beauticians with their own businesses",
+                  "Professionals settled abroad (USA)",
+                  "Pursuing higher education (MBA, M.Phil., IPS prep)",
+                  "Bank tellers and officers"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2">
+                    <Star className="h-5 w-5 text-white flex-shrink-0" fill="currentColor" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -532,7 +574,7 @@ const Bangalore = () => {
       <ImageGallery
         title="New Hope Children Home Gallery"
         images={[
-         "/images/child/1.jpeg?w=800&q=80",
+          "/images/child/1.jpeg?w=800&q=80",
           "/images/child/2.jpeg?w=800&q=80",
           "/images/child/3.jpeg?w=800&q=80",
           "/images/child/4.jpeg?w=800&q=80",

@@ -20,7 +20,7 @@ const Genesis = () => {
       <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-hero text-white pt-20 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <motion.div 
+          <motion.div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80')"
@@ -31,7 +31,7 @@ const Genesis = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 via-slate-900/85 to-indigo-950/90" />
         </div>
-        
+
         {/* Floating Elements */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(10)].map((_, i) => (
@@ -109,60 +109,36 @@ const Genesis = () => {
               className="prose prose-lg max-w-none"
             >
               <h2 className="text-responsive-2xl md:text-4xl font-heading font-bold text-primary mb-4 md:mb-6">
-                The Heart of India's Need
+                The Context
               </h2>
-              
-        
-              
+
               <p className="text-responsive-base text-foreground/80 leading-relaxed mb-6">
-                India, the world's second most populous nation, is home to over 1.2 billion people
-                across 29 states and 7 union territories. Despite decades of high economic growth,
-                millions remain trapped in poverty. Alarming realities paint the picture:
+                India, the world’s second most populous nation, is home to over 1.2 billion people across 29 states and 7 union territories. Despite decades of high economic growth, millions remain trapped in poverty. According to the most recent 2011, census data, Christians make up about 2.3% of India total population.
               </p>
-              <ul className="list-disc pl-6 space-y-3 text-foreground/80 mb-8">
-                <li>22,000 children die every day due to poverty-related causes (UNICEF)</li>
-                <li>Over 3 million children live on the streets</li>
-                <li>150 million children are trapped in bonded labour</li>
-                <li>Only 50% of children have access to education</li>
-                <li>
-                  Nearly 2 million girls between the ages of 5 and 15 are exploited in commercial
-                  sex work
-                </li>
-              </ul>
 
               <h2 className="text-4xl font-heading font-bold text-primary mb-6 mt-12">
                 Our Beginning
               </h2>
-              
+
               {/* Founder Image */}
               <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
                   alt="Community service"
                   className="w-full h-64 object-cover"
                 />
               </div>
-              
+
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                Amidst this vast socio-economic, religious, traditional, and caste-driven
-                complexity, Helping Hands India was born in 2001 with a mission to empower and
-                transform vulnerable children and communities—regardless of caste, creed, religion,
-                or background.
+                Amidst this vast socio-economic, religious, traditional, and caste-driven complexity, EverSpring International, under the name of Helping Hands India, was born in 2001 with a mission to empower and transform vulnerable children, leprosy community, Aged, Widows, HIV Infected and Pastors to plant churches.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                The movement began when compassion and a divine call touched the heart of Dr. Rev.
-                George Fernandes, a counsellor and theologian. Known lovingly by children as "Appa"
-                (Father), George drew strength from his own painful childhood. Growing up as a
-                semi-orphan and struggling under poverty, he once stood on the brink of despair.
-                But in that moment of brokenness, God transformed his life—igniting in him a
-                passion to transform the lives of countless others.
+                The movement began when compassion and a divine call touched the heart of Dr. Rev. George Fernandes, a counsellor and theologian. Known lovingly by children as “Appa” (Father), George drew strength from his own painful childhood. Growing up as a semi-orphan and struggling under poverty, he once stood on the brink of despair. But in that moment of brokenness, God transformed his life, igniting in him a passion to transform the lives of countless others.
               </p>
 
               <div className="bg-gold/10 border-l-4 border-gold p-6 my-8 rounded-r-lg">
                 <p className="text-lg text-foreground italic">
-                  "For the past 25 years, Helping Hands India has rendered restless service across
-                  the nation. What began with one man's compassion has grown into a movement of
-                  hope."
+                  "For the past 25 years, EverSpring International has rendered restless service across the nation. What began with one man’s compassion has grown into a movement of hope."
                 </p>
               </div>
 
@@ -170,14 +146,10 @@ const Genesis = () => {
                 Our Impact Today
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                Through these years of unwavering dedication, countless children have been rescued,
-                educated, and empowered. Families have been restored, communities uplifted, and
-                lives transformed.
+                Through these years of unwavering dedication, countless children have been rescued, educated, and empowered. Families have been restored, communities uplifted, and lives transformed.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                Today, Helping Hands India stands as a living transforming power, reminding us that
-                when faith meets compassion, despair turns into hope, poverty into possibility, and
-                broken lives into testimonies of grace.
+                Today, EverSpring International stands as a living transforming power, reminding us that when faith meets compassion, despair turns into hope, poverty into possibility, and broken lives into testimonies of Grace.
               </p>
             </motion.div>
           </div>

@@ -170,9 +170,9 @@ const DidYouKnow = () => {
                                             <div className="relative">
                                                 <div className="absolute -inset-1 bg-gradient-to-r from-gold to-yellow-600 rounded-full blur opacity-75"></div>
                                                 <img
-                                                    src="/images/logo.png"
-                                                    alt="Founder"
-                                                    className="relative w-16 h-16 rounded-full border-2 border-white object-cover bg-white"
+                                                    src="/images/george.jpg"
+                                                    alt="Dr. Rev. George Fernandes"
+                                                    className="relative w-20 h-20 rounded-full border-2 border-white object-cover bg-white"
                                                 />
                                             </div>
                                             <div>

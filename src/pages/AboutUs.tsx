@@ -123,8 +123,8 @@ const Genesis = () => {
               {/* Founder Image */}
               <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
-                  alt="Community service"
+                  src="/images/george.jpg"
+                  alt="Dr. Rev. George Fernandes"
                   className="w-full h-64 object-cover"
                 />
               </div>
